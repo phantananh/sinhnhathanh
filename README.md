@@ -1,6 +1,6 @@
-# Gửi Hanh, với tất cả yêu thương ♡
+# Hanh — Birthday Mode
 
-Website sinh nhật bằng tiếng Việt, sử dụng HTML, CSS và JavaScript thuần. Không cần thư viện, khóa API hay bước build.
+Website sinh nhật bằng tiếng Việt với phong cách hồng pastel, hình thỏ và gấu, lời nhắn, bánh thổi nến, album ảnh và bài hát **Dành cho em**. HTML, CSS và JavaScript thuần; không cần cài thư viện, khóa API, cơ sở dữ liệu hay bước build.
 
 ## Chạy tại máy phát triển
 
@@ -9,31 +9,59 @@ cd /workspace/sinhnhathanh
 python3 -m http.server 3000 --bind 0.0.0.0
 ```
 
-Dùng trình duyệt truy cập cổng 3000 trong môi trường hỗ trợ. Có thể mở trực tiếp `index.html` hoặc triển khai ba tệp `index.html`, `style.css`, `script.js` lên dịch vụ lưu trữ website tĩnh.
+Triển khai toàn bộ `index.html`, `style.css`, `script.js` và thư mục `assets/` lên dịch vụ lưu trữ website tĩnh. Phông Nunito tiếng Việt được lưu cục bộ trong `assets/fonts/`, kèm giấy phép OFL. Chỉ trình phát YouTube cần kết nối bên ngoài.
 
-## Cá nhân hóa
+## Mở thiệp
+
+1. Nhập **0611** bằng bàn phím số trên thiệp hoặc bàn phím thiết bị, rồi bấm **Mở quà thôi** (hoặc Enter).
+2. Mã thiếu hoặc sai sẽ có nhắc thử lại, không mở nội dung hoặc tải trình phát nhạc.
+3. Tùy chọn **Bật nhạc khi mở quà** mặc định được chọn. Bỏ chọn nếu muốn mở thiệp trước rồi bật nhạc sau.
+4. Nhấn **Khóa thiệp** để đóng lại và dừng nhạc. Tải lại trang cũng trở về màn khóa.
+
+Mật mã giao diện nằm trong hằng `PASSCODE` ở `script.js`; đây là một màn mở quà phía trình duyệt, không phải hệ thống xác thực máy chủ.
+
+## Nội dung và tương tác
 
 - Sửa lời chúc, tên và nội dung thư trong `index.html`.
 - Sửa màu sắc, bố cục trong `style.css`.
-- Hiệu ứng thổi/thắp nến, trái tim và hộp thoại nằm trong `script.js`.
+- Nhấn **Thổi nến thôi** để tắt nến, xem lời chúc và hiệu ứng trái tim; nhấn lần nữa để thắp lại.
+- Mở thư từ nút ở đầu hoặc cuối trang; nhấn Escape hoặc nút đóng để đóng thư.
+- Hỗ trợ màn hình từ 320 px, thao tác bàn phím và tùy chọn giảm chuyển động của thiết bị.
 
-Trang không dùng tài nguyên bên ngoài; hỗ trợ điện thoại, bàn phím và tùy chọn giảm chuyển động của thiết bị.
+## Album và file nhạc riêng
 
-## Ghép ảnh và nhạc
+Trang chia sẻ ẩn các nút chỉnh sửa. Thêm `?edit=1` vào cuối địa chỉ để vào chế độ chỉnh sửa cục bộ, rồi nhập mật mã.
 
-Chọn **Thêm ảnh** để đưa nhiều ảnh JPG, PNG hoặc WebP vào album. Nhấn ảnh để xem lớn; dùng phím mũi tên để chuyển ảnh, Escape để đóng. Ảnh được nén về cạnh dài tối đa 1400 px; không cắt hoặc sửa ảnh gốc.
+Sau khi mở khóa ở chế độ này, nhấn **Thêm những tấm ảnh của Hanh** hoặc mở mục **Trang trí thêm cho món quà** để chọn nhiều ảnh JPG, PNG hoặc WebP. Nhấn ảnh để xem lớn; dùng phím mũi tên chuyển ảnh và Escape để đóng. Ảnh được nén về cạnh dài tối đa 1400 px, không sửa tệp gốc.
 
-Chọn file nhạc (khuyến nghị MP3, tối đa 30 MB), rồi dùng nút **Dành cho em** để phát/tạm dừng. Website không tự tải bài hát từ Internet. Bạn cần cung cấp bản nhạc muốn dùng. Trình duyệt yêu cầu tương tác trước khi phát âm thanh.
+Có thể chọn file âm thanh riêng (khuyến nghị MP3, tối đa 30 MB) để thay cho YouTube. Nút nhạc cho phép phát và tạm dừng. Các lựa chọn được giữ trong bộ nhớ của phiên hiện tại, chưa lưu lên máy chủ hay repository.
 
-Sau khi chọn ảnh và nhạc, bấm **Tải thiệp đã ghép ảnh & nhạc**. Tệp `gui-hanh-yeu.html` chứa luôn giao diện, ảnh và nhạc, có thể đưa lên dịch vụ lưu trữ website tĩnh. Các thay đổi chỉ ở trong phiên hiện tại cho đến khi tải thiệp; không có máy chủ lưu ảnh. Chỉ chia sẻ bản thiệp với người bạn muốn chia sẻ ảnh.
+Bấm **Tải thiệp đã ghép ảnh & nhạc** để tải `gui-hanh-yeu.html`. Tệp này chứa giao diện, phông chữ, ảnh và file âm thanh đã chọn; vẫn bắt đầu bằng màn mật mã **0611**. Khi không có ảnh, bản thiệp đã tải sẽ ẩn phần album trống. Có thể dùng riêng tệp HTML này để triển khai website.
+
+## Nhạc YouTube
+
+Đã tích hợp video người dùng chọn: https://www.youtube.com/watch?v=QxXYWMIQAcQ.
+
+Trình phát chính thức chỉ được tạo sau khi nhập đúng mật mã và chọn mở cùng nhạc, hoặc sau khi nhấn nút **Dành cho em**. Đóng trình phát hoặc khóa thiệp sẽ xóa iframe để dừng phát. Đóng thư không dừng nhạc nền.
+
+Video cần Internet, trình duyệt cho phép phát và chủ video cho phép nhúng. Nếu không phát được, có liên kết mở video gốc trên YouTube. Bản HTML tải xuống giữ liên kết video, không tải bản ghi âm từ YouTube. Chạy qua website có địa chỉ HTTP(S) để YouTube nhận được thông tin nguồn trang cần thiết.
 
 ## Kiểm tra
 
 ```sh
 node --check script.js
+git diff --check
 curl --fail http://127.0.0.1:3000/ > /dev/null
 ```
 
-Kiểm tra tương tác trên trình duyệt: mở/đóng thư, thổi/thắp nến, thêm ảnh và xem lớn, phát/tạm dừng nhạc, tải thiệp và kiểm tra lại bản đã tải; kiểm tra bố cục điện thoại và máy tính. Không có bộ kiểm thử hay bước build của thư viện.
+Kiểm tra trình duyệt bao gồm: trạng thái khóa ban đầu, mã thiếu/sai/đúng, nhập bằng bàn phím và bàn phím số, đóng/mở lại thiệp, nhạc chỉ khởi tạo sau mở khóa, mở/đóng thư, thổi/thắp nến, nhập/xem ảnh, phát/tạm dừng file âm thanh, xuất và mở lại bản HTML độc lập, bố cục 320–1440 px và chế độ giảm chuyển động.
 
-Bài hát YouTube người dùng chọn đã được tích hợp: https://www.youtube.com/watch?v=QxXYWMIQAcQ. Nút **Dành cho em** mở trình phát YouTube chính thức; đóng trình phát sẽ dừng nhạc. Có thể chọn file âm thanh để thay thế. Video cần Internet và quyền cho phép nhúng của chủ sở hữu; nếu không phát được, dùng liên kết mở trên YouTube. Bản tải xuống giữ liên kết video, không tải hoặc nhúng tệp âm thanh YouTube.
+Trong môi trường đám mây hiện tại, chức năng tạo/đóng iframe YouTube được kiểm tra bằng phản hồi mô phỏng vì proxy chặn truy cập YouTube; việc phát âm thanh thực tế của video ngoài chưa được xác minh. File âm thanh cục bộ đã được kiểm tra phát/tạm dừng và bắt đầu sau khi nhập đúng mã.
+
+## Ảnh đã ghép
+
+Đã đưa đủ 15 ảnh từ file ZIP người dùng cung cấp vào `assets/photos/`, giữ nguyên nội dung và chất lượng tệp gốc. Danh sách và thứ tự album được lưu trong JSON `card-assets` ở `index.html`. Ảnh chỉ được tạo trong giao diện sau khi mở khóa; nhấn ảnh để xem đầy đủ. Bản HTML xuất ra nhúng tất cả ảnh vào cùng tệp.
+
+## GitHub Pages
+
+Toàn bộ mã và tài nguyên phục vụ từ nhánh `main`, thư mục gốc. Tệp `.nojekyll` cho phép phục vụ website tĩnh trực tiếp. Trong repository, chọn **Settings → Pages → Deploy from a branch → main → /(root)** và Save. Chỉ gửi link do GitHub báo sau khi triển khai hoàn tất.

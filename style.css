@@ -1,5 +1,586 @@
-:root{--paper:#fffaf3;--ink:#4c302e;--muted:#9a7e74;--pink:#b85c6b;--line:#ebded2}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible{outline:3px solid #b85c6b;outline-offset:5px}.header{max-width:1360px;margin:auto;padding:28px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:24px}.brand{font-size:13px;display:flex;align-items:center;gap:9px;font-weight:600}.brand-heart{color:var(--pink);font-size:30px;font-weight:400}.brand-dot{color:var(--pink);margin-left:-8px}.header-note{font-size:9px;letter-spacing:1.8px;color:var(--muted)}.header-link{font-size:11px}.header-link span{margin-left:15px;font-size:18px}.hero{max-width:1200px;margin:auto;padding:76px 45px 79px;display:grid;grid-template-columns:1.12fr 1fr;gap:40px;align-items:center}.eyebrow,.section-label{font-size:9px;letter-spacing:1.8px;font-weight:600;color:var(--pink)}.eyebrow{display:flex;align-items:center;gap:9px;line-height:1.8}.eyebrow span{width:6px;height:6px;border-radius:50%;background:var(--pink)}h1,h2,h3,.cake-caption{font-family:Georgia,'Times New Roman',serif;font-weight:400}h1{font-size:85px;line-height:1.08;letter-spacing:-4px;margin:27px 0 23px}h1 em,h2 em{font-weight:400;color:var(--pink)}.title-heart{font-size:68px;color:var(--pink);margin-left:16px;display:inline-block;transform:rotate(-13deg)}.intro{font-size:13px;line-height:1.9;color:#967c71;margin-bottom:28px}.primary{border:0;border-radius:5px;background:var(--pink);color:#fff9f1;padding:18px 22px;font-size:11px;display:inline-flex;gap:28px;align-items:center;transition:background .2s,transform .2s}.primary:hover{background:#a1495a;transform:translateY(-2px)}.primary span{font-size:18px}.handwritten{font-family:Georgia,serif;font-style:italic;color:var(--muted);font-size:12px;transform:rotate(-3deg);margin:16px 0 0 10px}.handwritten span{font-size:27px;margin-left:4px}.hero-art{position:relative;padding:18px 18px 30px}.cake-card{background:#fbecdf;border:1px solid #efdbcd;border-radius:180px 180px 14px 14px;min-height:475px;padding:54px 20px 28px;text-align:center;position:relative;transform:rotate(3deg);box-shadow:0 15px 45px #9b6c5210}.card-topline{display:flex;justify-content:center;gap:13px;font-size:8px;letter-spacing:2px;color:#ad8175}.card-topline span:last-child{font-size:14px;line-height:8px}.cake-scene{position:relative}.cake{position:relative;width:100%;height:270px;overflow:visible}.cake-glow{position:absolute;inset:15% 15% 10%;background:#fff3d8;filter:blur(30px);border-radius:50%}.cake-caption{font-size:29px;font-style:italic;letter-spacing:-.7px;margin-top:-5px}.cake-subtitle{font-size:10px;color:#a48579;margin:12px 0 22px}.candle-button{font-size:9px;letter-spacing:.3px;background:#fff7ed;border:1px solid #e9d2c3;border-radius:30px;padding:12px 15px;color:#936958}.candle-button:hover{background:white}.candle-button span{font-size:14px;margin-right:4px}.orbit-label{position:absolute;top:-5px;right:40px;z-index:1;font-family:Georgia,serif;font-style:italic;color:#a27c6d;font-size:13px;transform:rotate(10deg)}.art-spark,.floating-heart{position:absolute;z-index:1;color:#bd7a79;pointer-events:none}.spark-one{top:68px;left:-15px;font-size:39px}.spark-two{bottom:100px;right:-12px;font-size:23px;color:#c69a61}.heart-one{right:1px;top:35px;font-size:40px;transform:rotate(17deg)}.heart-two{bottom:68px;left:-8px;font-size:22px;transform:rotate(-15deg)}.gift-tag{position:absolute;bottom:7px;right:-8px;padding:16px 20px;background:#fffcf7;box-shadow:0 8px 25px #74523c0d;border:1px solid #f0e4d8;transform:rotate(-7deg);display:flex;align-items:center;gap:12px;font-size:11px}.gift-tag>span{font-size:29px;color:var(--pink)}.gift-tag small{display:block;margin-top:6px;font-size:9px;color:var(--muted)}.ribbon{display:flex;justify-content:center;align-items:center;gap:45px;white-space:nowrap;overflow:hidden;border-block:1px solid #e9d7c8;background:#f4e7da;padding:19px 0;font-size:9px;letter-spacing:2px;color:#a27b66}.ribbon span:nth-child(even){color:#b57376;font-size:16px}.wishes{max-width:1120px;margin:0 auto;padding:78px 36px 80px;text-align:center}h2{font-size:38px;letter-spacing:-1.1px;line-height:1.35;margin:18px 0 13px}.section-intro{font-size:12px;color:var(--muted);margin-bottom:36px}.wish-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:left}.wish{position:relative;border:1px solid var(--line);border-radius:8px;padding:26px;background:#fffcf7}.wish:nth-child(2){background:#faf0e7}.wish-icon{font-family:Georgia,serif;display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f7e7dc;color:#b57665;font-size:28px}.wish:nth-child(2) .wish-icon{background:#efded0}.wish-number{position:absolute;right:24px;top:28px;font-size:9px;color:#b5a295}.wish h3{font-size:23px;letter-spacing:-.5px;margin:22px 0 12px}.wish p{font-size:11px;line-height:1.9;color:#967e72;margin:0;max-width:260px}.letter-section{position:relative;margin:0 5%;padding:64px 30px;text-align:center;background:#f6e9df;border:1px solid #efdfd3;border-radius:12px;overflow:hidden}.letter-section h2{font-size:43px}.letter-section>p{font-size:12px;line-height:1.9;color:#957a70;margin:22px 0}.letter-decoration{position:absolute;right:8%;top:10px;font-family:Georgia,serif;font-size:250px;color:#ebd5cc;transform:rotate(15deg);pointer-events:none}.letter-section>*:not(.letter-decoration){position:relative}.letter-postscript{display:block;font-family:Georgia,serif;font-style:italic;font-size:11px;color:#a28678;margin-top:22px}footer{max-width:1360px;margin:auto;padding:35px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px}footer .brand{font-size:10px;font-weight:400}footer>span,.back-top{font-size:9px;color:var(--muted)}footer>span{font-family:Georgia,serif;font-style:italic}.back-top:hover{text-decoration:underline}dialog{border:1px solid #e6d3c5;border-radius:10px;background:#fffbf5;color:var(--ink);width:min(560px,calc(100% - 32px));padding:38px 44px;max-height:85dvh;box-shadow:0 25px 100px #4c302e22}dialog::backdrop{background:#4c302e77;backdrop-filter:blur(5px)}.close-dialog{position:absolute;top:10px;right:13px;border:0;background:none;color:#96776b;font-size:28px;width:36px;height:36px}.dialog-heart{display:block;text-align:center;font-size:42px;color:var(--pink);margin-bottom:12px}dialog .section-label{text-align:center;font-size:8px}dialog h2{font-size:36px}.letter-body p{font-size:13px;line-height:1.9;color:#84685f}.signature{font-family:Georgia,serif;font-size:15px;line-height:1.8}.signature em{font-size:24px;color:var(--pink)}body.modal-open{overflow:hidden}.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);background:#4c302e;color:#fffaf3;border-radius:10px;padding:16px 23px;z-index:5;font-size:12px;line-height:1.6;opacity:0;pointer-events:none;transition:.3s;max-width:calc(100% - 32px);width:max-content;text-align:center}.toast.visible{opacity:1;transform:translate(-50%,0)}.confetti{position:fixed;inset:0;pointer-events:none;z-index:10;overflow:hidden}.confetti i{position:absolute;top:-30px;animation:fall 3.5s ease-in forwards;font-style:normal;color:var(--pink)}@keyframes fall{to{transform:translate(var(--drift),110vh) rotate(500deg);opacity:0}}.flames{transform-box:fill-box;transform-origin:center bottom;animation:flicker 1.6s ease-in-out infinite alternate;transition:opacity .5s}.candles-out .flames{opacity:0;animation:none}@keyframes flicker{to{transform:scale(.94,1.08)}}@media(min-width:1400px){.hero{padding-top:95px;padding-bottom:95px}}@media(max-width:900px){.header-note{display:none}.hero{padding:55px 35px;gap:20px}h1{font-size:67px}.title-heart{font-size:50px;margin-left:5px}.eyebrow{font-size:7px;letter-spacing:1px}.cake-card{min-height:auto;padding:47px 12px 24px}.cake{height:230px}.cake-caption{font-size:25px}.candle-button{font-size:8px;padding:11px}.gift-tag{right:-5px;padding:12px}.wish{padding:22px}.wish h3{font-size:21px}.letter-decoration{right:0}.ribbon{gap:25px}}@media(max-width:620px){.header{padding:16px 22px}.header-link{font-size:9px}.header-link span{margin-left:4px}.brand{font-size:11px}.hero{grid-template-columns:1fr;padding:43px 26px 45px;gap:30px}.hero-copy{text-align:center}.eyebrow{justify-content:center;font-size:7px;letter-spacing:1px}h1{font-size:72px;letter-spacing:-3px;margin-top:23px}.intro{font-size:12px}.primary{font-size:11px;padding:16px 21px}.handwritten{font-size:11px}.hero-art{width:100%;max-width:370px;justify-self:center;margin-top:10px;padding-inline:20px}.cake-card{padding-top:43px}.cake{height:260px}.cake-caption{font-size:28px}.cake-subtitle{font-size:9px}.candle-button{font-size:9px}.orbit-label{right:35px;top:-8px;font-size:11px}.spark-one{left:0}.heart-one{right:9px}.gift-tag{right:2px}.ribbon{justify-content:flex-start;padding-inline:20px;font-size:8px;gap:25px}.wishes{padding:55px 24px}.section-label{font-size:8px}h2{font-size:30px}.wish-grid{grid-template-columns:1fr;gap:13px}.wish{padding:24px}.wish p{max-width:100%;font-size:12px}.wish h3{margin-top:18px;font-size:25px}.letter-section{margin-inline:20px;padding:45px 21px}.letter-section h2{font-size:33px}.letter-decoration{font-size:190px;right:-50px;top:30px}.letter-postscript{font-size:10px}footer{padding:25px 24px;flex-wrap:wrap}footer>span{order:3;flex-basis:100%;text-align:center}.back-top{margin-left:auto}dialog{padding:30px 25px}.letter-body p{font-size:12px}.toast{font-size:11px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.confetti{display:none}}
+/*
+Nunito font license (also applies to the font embedded in exported cards):
+Copyright 2014 The Nunito Project Authors (https://github.com/googlefonts/nunito)
 
-.album{max-width:1120px;margin:auto;padding:70px 36px 0;text-align:center}.photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:start}.photo-card{background:#fffdf9;border:1px solid var(--line);padding:10px 10px 15px;box-shadow:0 4px 15px #64453409;transition:transform .2s;min-width:0;color:var(--ink)}.photo-card:nth-child(3n+1){transform:rotate(-2deg)}.photo-card:nth-child(3n+2){transform:rotate(2deg)}.photo-card:hover{transform:translateY(-5px) rotate(0)}.photo-card img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;background:#f5e6da}.photo-card span{display:block;font-family:Georgia,serif;font-style:italic;font-size:12px;margin-top:14px;color:#a27869}.album-empty{border:1px dashed #d9b9aa;border-radius:9px;padding:30px;background:#faf0e7}.album-empty>span{font-size:42px;color:var(--pink)}.album-empty p{font-size:12px;color:var(--muted);margin-bottom:24px}.secondary{display:inline-block;border:1px solid #e0c8bb;background:#fffaf3;color:#946659;font-size:10px;border-radius:5px;padding:12px 16px;cursor:pointer}.secondary:hover{background:#f3e1d6}.personalize{margin:30px 0 0;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.personalize p{flex-basis:100%;font-size:10px;color:var(--muted);line-height:1.8;margin:2px 0 0}.music-toggle{position:fixed;bottom:18px;right:18px;z-index:3;border:1px solid #dfc5b5;background:#fffbf4ed;box-shadow:0 4px 20px #5e3d3212;border-radius:30px;padding:13px 18px;color:var(--pink);font-size:11px;backdrop-filter:blur(8px)}#music-state{color:var(--muted);font-size:10px}#photo-viewer{background:#fffaf3;padding:45px 16px 16px;width:min(720px,calc(100% - 24px));text-align:center}#full-photo{display:block;max-width:100%;max-height:65dvh;object-fit:contain;margin:auto}#photo-counter{font-size:11px;color:var(--muted)}.photo-nav{display:flex;justify-content:center;gap:16px}.photo-nav button{min-width:65px}body.personalized .personalize,body.personalized .album-empty{display:none}body.personalized .album:has(.photo-grid:empty){display:none}footer{padding-bottom:85px}@media(max-width:620px){.album{padding:50px 24px 0}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.photo-card{padding:7px 7px 12px}.photo-card span{font-size:11px}.music-toggle{bottom:12px;right:12px;padding:12px 16px}.personalize .secondary{font-size:9px}}
-.youtube-panel{position:fixed;right:18px;bottom:72px;width:min(340px,calc(100% - 32px));background:#fffbf5;border:1px solid #dfc5b5;border-radius:12px;box-shadow:0 12px 45px #4c302e33;z-index:4;padding:12px}.youtube-panel[hidden]{display:none}.player-heading{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--pink);padding:0 0 9px 3px}.player-heading button{border:0;background:none;color:var(--ink);font-size:24px;cursor:pointer;width:30px;height:30px}#youtube-frame iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:5px;display:block}.youtube-panel>a{display:block;font-size:10px;text-align:center;padding:12px 2px 3px;color:var(--muted);text-decoration:underline}
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+*/
+@font-face {
+  font-family: Nunito;
+  src: url('assets/fonts/Nunito.ttf') format('truetype');
+  font-weight: 200 1000;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --paper: #fff8f8;
+  --ink: #694651;
+  --muted: #9b7882;
+  --pink: #ce7291;
+  --deep-pink: #b95278;
+  --line: #efdae1;
+  --lavender: #eee8f5;
+  --round: Nunito, 'Trebuchet MS', Arial, sans-serif;
+  --serif: Georgia, 'Times New Roman', serif;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: 30px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--round); font-size: 14px; -webkit-font-smoothing: antialiased; }
+button, input { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+button, a, input, summary { touch-action: manipulation; }
+a { color: inherit; text-decoration: none; }
+button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--deep-pink); outline-offset: 5px; }
+button:disabled { cursor: wait; opacity: .65; }
+button, .secondary { transition: background .2s, transform .2s, box-shadow .2s; }
+button:hover:not(:disabled) { transform: translateY(-2px); }
+.svg-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.icon { width: 20px; height: 20px; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
+.reverse { transform: rotate(180deg); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.brand { display: inline-flex; align-items: center; gap: 9px; font-size: 15px; font-weight: 750; white-space: nowrap; }
+.brand > .icon { width: 27px; height: 27px; color: var(--pink); }
+.brand em { color: var(--deep-pink); font-style: normal; }
+.primary { border: 1px solid #bf6484; border-radius: 14px; padding: 16px 23px; background: var(--pink); color: white; display: inline-flex; justify-content: center; align-items: center; gap: 24px; font-size: 13px; font-weight: 800; box-shadow: 0 5px 0 #b65b7b, 0 10px 20px #ce72911a; }
+.primary:hover:not(:disabled) { background: #c66688; box-shadow: 0 7px 0 #b65b7b, 0 12px 22px #ce729122; }
+.primary:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 2px 0 #b65b7b; }
+.secondary { border: 1px solid #e9cbd6; background: #fffafa; color: #a45873; border-radius: 10px; padding: 12px 17px; font-size: 12px; font-weight: 750; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+.secondary:hover { background: #fbeaf0; }
+.eyebrow, .section-label { font-size: 10px; letter-spacing: 2.1px; font-weight: 850; color: #b96c86; }
+/* The little front door. Protected content starts hidden and inert in HTML. */
+.lock-screen { min-height: 100svh; position: relative; isolation: isolate; background: radial-gradient(ellipse at 15% 48%, #f5e1eec4 0, transparent 43%), radial-gradient(ellipse at 90% 80%, #e8e4f19c 0, transparent 40%), repeating-linear-gradient(0deg, transparent 0 39px, #d99db314 39px 40px), repeating-linear-gradient(90deg, transparent 0 39px, #d99db314 39px 40px), #fff7f8; padding: 0 40px; display: flex; flex-direction: column; }
+.lock-header { width: 100%; max-width: 1220px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 27px 0; }
+.tiny-note { display: inline-flex; align-items: center; gap: 9px; font-size: 11px; color: #aa8290; }
+.tiny-note .icon { width: 14px; height: 14px; }
+.lock-layout { display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 50px; width: 100%; max-width: 1010px; margin: auto; padding: 30px 0 45px; }
+.lock-art { position: relative; min-height: 490px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.art-label { position: absolute; top: 28px; left: 40px; font-family: var(--serif); font-size: 17px; font-style: italic; transform: rotate(-7deg); color: #b58a99; }
+.love-orbit { position: absolute; top: 63px; left: 15px; right: 15px; height: 370px; background: #f6e3eac2; border: 1px dashed #dbb5c5; border-radius: 49% 51% 45% 55% / 52% 40% 60% 48%; transform: rotate(-9deg); }
+.love-orbit::after { content: ''; position: absolute; inset: 14px; border: 1px solid #ffffffaa; border-radius: inherit; }
+.friends-art { width: 100%; max-width: 430px; position: relative; margin-top: 20px; filter: drop-shadow(0 14px 10px #9d6b7c0c); animation: gentle-float 5s ease-in-out infinite; }
+.art-bubble { position: absolute; top: 83px; right: 18px; z-index: 1; border: 1px solid #e8c8d6; border-radius: 15px 15px 15px 2px; background: #fffdfb; padding: 13px 17px; color: #a4667c; font-size: 12px; font-weight: 750; transform: rotate(5deg); box-shadow: 0 5px 15px #b87a9210; }
+.art-bubble .icon { width: 15px; height: 15px; margin-left: 5px; }
+.floating-daisy { position: absolute; top: 107px; left: -9px; color: #d5ad72; transform: rotate(-20deg); }
+.floating-daisy .icon { width: 48px; height: 48px; fill: #f9e9bd; stroke-width: 1.1; }
+.tiny-spark { position: absolute; right: 0; bottom: 130px; color: #baa6cc; }
+.tiny-spark .icon { width: 34px; height: 34px; fill: #e4d9ed; stroke-width: 1.2; }
+.tiny-heart { position: absolute; bottom: 112px; left: 28px; color: #d889a6; transform: rotate(-18deg); }
+.tiny-heart .icon { width: 25px; height: 25px; }
+.recipient-card { position: absolute; bottom: 43px; right: 26px; display: flex; align-items: center; gap: 12px; padding: 14px 20px; background: #fffdf9; border: 1px solid #eddbdd; border-radius: 3px; box-shadow: 0 7px 20px #a66d7a0c; transform: rotate(-5deg); font-family: var(--serif); font-size: 15px; }
+.recipient-card small { display: block; font-family: var(--round); color: #b08b90; font-size: 9px; margin-top: 5px; }
+.recipient-card strong { color: #b76a81; font-weight: 400; font-style: italic; }
+.postmark { width: 36px; height: 43px; border: 1px dashed #d9b2bf; background: #fbecf0; display: grid; place-items: center; color: #cb879c; }
+.postmark .icon { width: 22px; }
+.art-handwriting { position: absolute; bottom: -8px; left: 23px; font: italic 16px var(--serif); color: #ad8292; transform: rotate(-4deg); }
+.lock-card { max-width: 426px; width: 100%; justify-self: center; position: relative; padding: 28px 38px 22px; border: 1px solid #efd7e0; border-radius: 28px; background: #fffcfd; box-shadow: 0 8px 0 #f3e3ea, 0 22px 60px #ad6f8a12; text-align: center; }
+.mobile-mascot { display: none; }
+.card-tape { position: absolute; width: 100px; height: 28px; left: 50%; top: -14px; transform: translateX(-50%) rotate(-4deg); background: repeating-linear-gradient(90deg, #f2e7bdbf 0 5px, #f7edcdbf 5px 10px); clip-path: polygon(3% 0, 100% 0, 97% 20%, 100% 40%, 97% 60%, 100% 80%, 97% 100%, 0 100%, 3% 80%, 0 60%, 3% 40%, 0 20%); }
+.lock-icon { position: relative; margin: 0 auto 14px; width: 46px; height: 46px; display: grid; place-items: center; border-radius: 16px; background: #fbe9ef; border: 1px solid #f4d7e3; color: #ce7798; transform: rotate(-5deg); }
+.lock-icon > .icon { width: 23px; height: 23px; }
+.lock-icon > span { position: absolute; right: -11px; top: -10px; font-size: 22px; color: #d08fa3; transform: rotate(17deg); }
+.lock-card .eyebrow { margin: 0 0 11px; font-size: 9px; letter-spacing: 2px; }
+.lock-card h1 { font-size: 29px; line-height: 1.35; letter-spacing: -.6px; margin: 0; font-weight: 850; }
+.lock-card h1 em { color: var(--pink); font-family: var(--serif); font-weight: 400; font-size: 34px; }
+.lock-description { font-size: 12px; line-height: 1.75; color: var(--muted); margin: 12px 0 21px; }
+.pin-entry { position: relative; max-width: 240px; margin: 0 auto; border-radius: 12px; }
+.pin-dots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.pin-slot { display: grid; place-items: center; height: 54px; border: 1.5px solid #ecd6df; background: #fff8fa; border-radius: 12px; transition: border-color .2s, background .2s, transform .2s; }
+.pin-slot .icon { width: 19px; height: 19px; color: #e8c9d6; }
+.pin-slot.is-filled { background: #fbe6ee; border-color: #dc9db5; }
+.pin-slot.is-filled .icon { fill: #cd7895; stroke: #cd7895; animation: heart-pop .2s ease-out; }
+.pin-entry:focus-within .pin-slot.is-current { outline: 2px solid #cd7895; outline-offset: 3px; }
+.pin-entry input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; font-size: 16px; cursor: text; border: 0; }
+.pin-entry:focus-within .pin-slot { border-color: #d7a0b5; }
+.code-message { min-height: 20px; margin: 10px -10px 10px; font-size: 10px; line-height: 1.6; color: #ae8c98; }
+.code-message.is-error { color: #b7446c; font-weight: 750; }
+.code-message.is-success { color: #788d70; font-weight: 750; }
+.is-error .pin-entry { animation: shake .35s ease-in-out; }
+.keypad { max-width: 238px; margin: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px 9px; }
+.keypad button { border: 1px solid #f0e2e9; background: #fffafc; border-radius: 11px; min-height: 38px; font-size: 18px; font-weight: 650; color: #826170; box-shadow: 0 2px 0 #f4e7ed; }
+.keypad button:hover { background: #f8e7ef; border-color: #e3bece; }
+.keypad button:active { background: #f4d9e5; transform: translateY(1px); box-shadow: none; }
+.keypad .keypad-special { color: #cb8ca6; background: #fcf4f9; }
+.keypad .icon { width: 18px; height: 18px; }
+.code-hint { margin: 14px 0 0; padding: 10px 5px; background: #f5f0fa; border: 1px dashed #d8c9e5; border-radius: 9px; color: #927da6; font-size: 11px; }
+.code-hint .icon { width: 13px; height: 13px; }
+.music-preference { position: relative; display: flex; justify-content: center; align-items: center; gap: 6px; color: #a27e8d; margin: 19px 0 15px; font-size: 10px; cursor: pointer; }
+.music-preference input { position: absolute; width: 15px; height: 15px; left: 35px; opacity: 0; }
+.custom-check { display: grid; place-items: center; width: 14px; height: 14px; border: 1px solid #e1b8ca; border-radius: 4px; background: white; }
+.music-preference input:checked + .custom-check { background: #d68ba4; border-color: #d68ba4; }
+.music-preference input:checked + .custom-check::after { content: ''; width: 6px; height: 3px; border-left: 1.5px solid white; border-bottom: 1.5px solid white; transform: translateY(-1px) rotate(-45deg); }
+.music-preference input:focus-visible + .custom-check { outline: 2px solid var(--deep-pink); outline-offset: 3px; }
+.music-preference > .icon { width: 13px; height: 13px; }
+.unlock-button { width: 100%; gap: 15px; padding: 15px 13px; font-size: 12px; }
+.unlock-button .icon { width: 17px; height: 17px; }
+.lock-footnote { margin: 20px 0 0; font-size: 9px; color: #b298a1; }
+.lock-footnote .icon { width: 12px; height: 12px; margin-left: 4px; }
+.noscript-message { color: var(--deep-pink); font-size: 12px; }
+.lock-footer { margin: 0 auto; width: 100%; max-width: 1220px; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 0 24px; font-size: 10px; color: #b695a3; }
+.lock-footer > span:last-child { font: italic 12px var(--serif); display: inline-flex; align-items: center; gap: 8px; }
+.lock-footer .icon { width: 13px; height: 13px; }
+.lock-screen.is-unlocking .lock-icon { animation: heart-pop .5s ease-in-out; }
+/* Inside the birthday card. */
+#birthday-content { background: radial-gradient(ellipse at 90% 8%, #f9e8ef99, transparent 30%), #fff9fa; }
+#birthday-content.is-revealing { animation: reveal .6s ease-out both; }
+.header { max-width: 1240px; margin: auto; padding: 27px 38px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px dashed var(--line); gap: 20px; }
+.header nav { display: flex; align-items: center; gap: 28px; font-size: 11px; color: #987380; font-weight: 700; }
+.header nav a:hover { color: var(--deep-pink); }
+.relock-button { display: inline-flex; align-items: center; gap: 7px; background: #fff5f8; border: 1px solid #edd6e0; padding: 9px 12px; border-radius: 30px; color: #ae748a; font-size: 10px; }
+.relock-button .icon { width: 13px; height: 13px; }
+.hero { max-width: 1170px; margin: auto; padding: 76px 40px 88px; display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: 55px; }
+.birthday-badge { display: inline-flex; align-items: center; gap: 8px; border-radius: 30px; border: 1px solid #ebd4de; background: #fcf0f5; padding: 8px 13px; font-size: 8px; letter-spacing: 1.2px; font-weight: 850; color: #b37890; }
+.birthday-badge .icon { width: 15px; height: 15px; fill: #edcedb; stroke-width: 1.3; }
+.hero h1 { position: relative; font-size: clamp(52px, 5.6vw, 78px); line-height: 1.12; letter-spacing: -3px; font-weight: 900; margin: 24px 0 20px; }
+.hero h1 em { font-family: var(--serif); color: var(--pink); font-weight: 400; font-size: 1.07em; white-space: nowrap; letter-spacing: -3.5px; }
+.hero h1 > .icon { position: absolute; width: 43px; height: 43px; color: #d99aaf; transform: rotate(15deg); top: 62px; right: 22px; }
+.hero h1:focus { outline: none; }
+.intro { font-size: 13px; line-height: 1.9; color: var(--muted); margin: 20px 0 27px; }
+.handwritten { display: flex; align-items: center; gap: 7px; font: italic 12px var(--serif); color: #ae8696; margin: 22px 0 0 3px; }
+.handwritten .icon { width: 15px; height: 15px; }
+.love-pills { display: flex; gap: 17px; margin-top: 32px; font-size: 9px; color: #a77f8f; }
+.love-pills span { display: flex; align-items: center; gap: 5px; }
+.love-pills .icon { width: 13px; height: 13px; color: #cb91ab; }
+.hero-art { position: relative; padding: 20px 8px 30px; }
+.cake-card { min-height: 480px; background: repeating-linear-gradient(0deg, transparent 0 27px, #f9dce73b 27px 28px), repeating-linear-gradient(90deg, transparent 0 27px, #f9dce73b 27px 28px), #fff1f4; border: 1px solid #efd3df; border-radius: 170px 170px 24px 24px; padding: 50px 20px 31px; text-align: center; transform: rotate(3deg); box-shadow: 8px 10px 0 #f3e0e873, 0 16px 40px #b76e8a0b; }
+.card-topline { display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 8px; letter-spacing: 1.7px; font-weight: 800; color: #b78395; }
+.card-topline .icon { width: 12px; height: 12px; }
+.cake-scene { position: relative; }
+.cake { position: relative; width: 100%; height: 270px; overflow: visible; }
+.cake-glow { position: absolute; inset: 17% 15% 5%; border-radius: 50%; background: #fff3da; filter: blur(30px); }
+.cake-caption { font: italic 30px var(--serif); letter-spacing: -.7px; margin-top: -7px; color: #8a5f6d; }
+.cake-subtitle { font-size: 10px; color: #b18a96; margin: 11px 0 22px; }
+.candle-button { display: inline-flex; align-items: center; gap: 7px; border: 1px solid #e6baca; border-radius: 30px; padding: 11px 18px; background: #fffafa; color: #b86c86; font-size: 11px; font-weight: 750; }
+.candle-button:hover { background: #fce1ec; }
+.candle-button .icon { width: 15px; height: 15px; }
+.orbit-label { position: absolute; top: -7px; right: 40px; color: #b18697; font: italic 14px var(--serif); transform: rotate(8deg); }
+.art-spark, .floating-heart { position: absolute; z-index: 1; color: #c08aa5; pointer-events: none; }
+.spark-one { top: 77px; left: -20px; }
+.spark-one .icon { width: 38px; height: 38px; fill: #f0d6e5; stroke-width: 1.3; }
+.heart-one { right: -14px; top: 42px; transform: rotate(17deg); }
+.heart-one .icon { width: 37px; height: 37px; }
+.gift-tag { display: flex; align-items: center; gap: 12px; position: absolute; bottom: 4px; right: -22px; background: #fffcfa; border: 1px solid #ecdbe0; border-radius: 5px; padding: 14px 18px; box-shadow: 0 5px 15px #a46c7b0a; transform: rotate(-6deg); font-size: 11px; font-weight: 750; }
+.tag-icon { display: grid; place-items: center; width: 35px; height: 38px; border: 1px dashed #dfb5c7; color: #c787a2; background: #fdf0f5; }
+.tag-icon .icon { width: 22px; height: 22px; }
+.gift-tag small { display: block; font-size: 8px; color: #a98a93; margin-top: 5px; font-weight: 500; }
+.birthday-sticker { position: absolute; left: -23px; bottom: 31px; display: grid; align-content: center; justify-items: center; width: 79px; height: 79px; border-radius: 50%; border: 2px dashed #bcb1d0; background: #f0eaf8; color: #a193b2; transform: rotate(-13deg); font-size: 11px; line-height: 1.1; box-shadow: 0 0 0 4px #f0eaf8; }
+.birthday-sticker em { font: italic 24px var(--serif); }
+.birthday-sticker .icon { width: 16px; height: 16px; margin-top: 4px; fill: #ddcee8; stroke-width: 1.2; }
+.ribbon { padding: 18px 15px; display: flex; align-items: center; justify-content: center; gap: 34px; overflow: hidden; white-space: nowrap; background: #f8e9ef; border-block: 1px dashed #e4c3d3; font-size: 9px; letter-spacing: 1.7px; color: #b17c93; font-weight: 800; }
+.ribbon .icon { width: 17px; height: 17px; color: #cc96b0; }
+h2 { font-size: 38px; line-height: 1.3; letter-spacing: -1.2px; font-weight: 850; margin: 16px 0 14px; }
+h2 em { font-family: var(--serif); font-weight: 400; font-size: 1.12em; color: var(--pink); }
+.section-intro { font-size: 12px; color: var(--muted); line-height: 1.8; margin: 0 0 36px; }
+.wishes { max-width: 1140px; padding: 78px 36px 35px; text-align: center; margin: auto; }
+.wish-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 23px; text-align: left; margin-top: 32px; }
+.wish { position: relative; padding: 27px; border: 1px solid #efd5df; border-radius: 20px 20px 36px 20px; background: #fff0f4; box-shadow: 0 5px 0 #f5e3ea; }
+.wish:nth-child(2) { background: #f4f0fa; border-color: #e4daee; box-shadow: 0 5px 0 #ece5f3; transform: rotate(1.5deg); }
+.wish:nth-child(3) { background: #fff6e9; border-color: #eedfc8; box-shadow: 0 5px 0 #f4ead8; transform: rotate(-1deg); }
+.wish-icon { display: grid; place-items: center; width: 43px; height: 43px; color: #c68da0; border: 1px solid #edceda; border-radius: 15px; background: #fff7fa; transform: rotate(-7deg); }
+.wish:nth-child(2) .wish-icon { color: #a494bb; background: #fcfaff; border-color: #dfd5e9; }
+.wish:nth-child(3) .wish-icon { color: #c0a177; background: #fffcf7; border-color: #eaddc6; }
+.wish-icon .icon { width: 25px; height: 25px; }
+.wish-number { position: absolute; right: 26px; top: 34px; font-size: 9px; color: #b292a0; }
+.wish h3 { font-size: 21px; letter-spacing: -.5px; font-weight: 850; margin: 22px 0 11px; }
+.wish p { font-size: 12px; color: #9a7b86; line-height: 1.85; margin: 0 0 4px; }
+.wish-doodle { position: absolute; right: 18px; bottom: 12px; color: #dab5c5; transform: rotate(10deg); }
+.wish-doodle .icon { width: 17px; height: 17px; }
+.album { max-width: 1120px; margin: auto; padding: 65px 36px 70px; text-align: center; }
+.photo-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.photo-card { background: #fffdfb; border: 1px solid #ecdbe2; padding: 10px 10px 16px; border-radius: 3px; box-shadow: 0 5px 18px #9a6d7c0d; color: var(--ink); position: relative; min-width: 0; }
+.photo-card::before { content: ''; position: absolute; top: -9px; left: calc(50% - 22px); width: 44px; height: 18px; transform: rotate(-5deg); background: #e7d7edbb; z-index: 1; }
+.photo-card:nth-child(3n+1) { transform: rotate(-3deg); }
+.photo-card:nth-child(3n+2) { transform: rotate(2deg); }
+.photo-card:nth-child(3n+2)::before { background: #f2dfbccc; transform: rotate(6deg); }
+.photo-card:hover { transform: translateY(-5px) rotate(0) !important; }
+.photo-card img { display: block; width: 100%; aspect-ratio: 3/4; object-fit: cover; background: #f8e9ef; border-radius: 2px; }
+.photo-card span { display: block; font: italic 12px var(--serif); color: #ac8193; margin-top: 15px; }
+.album-empty { border: 1px dashed #e0becd; border-radius: 20px; padding: 28px; background: #fef2f6; }
+.album-heart { display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 15px; background: #f9e2ec; color: #cc91aa; transform: rotate(-8deg); }
+.album-heart .icon { width: 26px; height: 26px; }
+.album-empty p { font-size: 12px; color: #b18b9b; line-height: 1.8; margin: 14px 0 20px; }
+.personalize { margin: 28px 0 0; }
+.personalize summary { display: inline-flex; align-items: center; gap: 8px; list-style: none; cursor: pointer; font-size: 11px; color: #b48b9d; border-bottom: 1px dashed #d9b6c7; padding-bottom: 6px; }
+.personalize summary::-webkit-details-marker { display: none; }
+.personalize summary .icon { width: 13px; height: 13px; }
+.personalize-actions { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.personalize-actions p { flex-basis: 100%; font-size: 10px; color: #b195a0; line-height: 1.8; max-width: 480px; }
+.letter-section { position: relative; display: grid; grid-template-columns: .9fr 1.2fr; align-items: center; max-width: 1120px; margin: 0 auto; border: 1px solid #eacdd9; border-radius: 25px; background: radial-gradient(ellipse at 0 50%, #f4dce8, transparent 65%), #fbedf2; padding: 48px 65px 46px 35px; }
+.letter-mini-art svg { display: block; width: 100%; max-width: 350px; }
+.letter-content { padding-left: 15px; }
+.letter-section h2 { font-size: 34px; }
+.letter-section p { color: #a17d8c; font-size: 12px; line-height: 1.9; margin: 20px 0 23px; }
+.letter-postscript { display: block; margin-top: 24px; color: #af899b; font: italic 11px var(--serif); }
+.letter-stamp { position: absolute; top: 20px; right: 25px; display: grid; justify-items: center; gap: 5px; border: 1px dashed #d4a0b5; border-radius: 50%; color: #c994a9; width: 66px; height: 66px; align-content: center; transform: rotate(15deg); }
+.letter-stamp .icon { width: 22px; height: 22px; }
+.letter-stamp span { font-size: 7px; }
+.footer { max-width: 1240px; margin: auto; padding: 38px 38px 110px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.footer .brand { font-size: 10px; font-weight: 650; }
+.footer .brand .icon { width: 20px; height: 20px; }
+.footer > span { font: italic 11px var(--serif); color: #b18b9d; }
+.back-top { display: flex; align-items: center; gap: 5px; font-size: 10px; color: #a97e92; }
+.back-top .icon { width: 13px; height: 13px; transform: rotate(-90deg); }
+/* Letters, memories and a little music. */
+dialog { width: min(560px, calc(100% - 32px)); max-height: 85dvh; color: var(--ink); background: #fffbfc; border: 1px solid #e6c5d4; border-radius: 22px; padding: 35px 42px; box-shadow: 0 25px 90px #69465122; }
+dialog::backdrop { background: #69465169; backdrop-filter: blur(7px); }
+.close-dialog { position: absolute; top: 12px; right: 12px; width: 34px; height: 34px; border: 1px solid #f0dce5; border-radius: 50%; background: #fff4f8; color: #ba7e98; display: grid; place-items: center; padding: 7px; }
+.close-dialog .icon { width: 16px; height: 16px; }
+.dialog-heart { display: grid; place-items: center; margin: 2px auto 17px; width: 55px; height: 55px; border-radius: 50%; background: #fce7ef; color: #cb87a1; }
+.dialog-heart .icon { width: 29px; height: 29px; }
+dialog .section-label { text-align: center; font-size: 8px; letter-spacing: 1.5px; }
+dialog h2 { font: italic 36px var(--serif); color: #c17594; margin: 26px 0 18px; }
+.letter-body p { font-size: 13px; line-height: 1.95; color: #8d6b7b; }
+.signature { font-size: 13px; line-height: 1.9; margin-top: 26px; color: #a07a8d; }
+.signature em { font: italic 25px var(--serif); color: #c17594; }
+body.modal-open { overflow: hidden; }
+#photo-viewer { width: min(720px, calc(100% - 24px)); text-align: center; padding: 52px 18px 18px; }
+#full-photo { display: block; max-width: 100%; max-height: 62dvh; object-fit: contain; border-radius: 5px; margin: auto; }
+#photo-counter { color: #ac8498; font-size: 11px; }
+.photo-nav { display: flex; justify-content: center; gap: 15px; }
+.photo-nav button { min-width: 60px; }
+.music-toggle { position: fixed; bottom: 20px; right: 25px; z-index: 3; display: flex; align-items: center; gap: 11px; padding: 10px 16px 10px 10px; border: 1px solid #e8c7d7; border-radius: 50px; background: #fffafceF; box-shadow: 0 5px 22px #ab6a8617; backdrop-filter: blur(12px); color: #bb7494; }
+.music-disc { display: grid; place-items: center; width: 35px; height: 35px; background: #f6dce7; border: 5px solid #faedf3; border-radius: 50%; box-shadow: 0 0 0 1px #e9c3d6; }
+.music-disc .icon { width: 15px; height: 15px; }
+.music-label { text-align: left; font-size: 11px; font-weight: 800; }
+.music-label small { display: block; font-size: 8px; font-weight: 500; color: #b596a5; margin-top: 2px; }
+.music-bars { height: 17px; display: flex; gap: 3px; align-items: center; margin-left: 8px; }
+.music-bars i { width: 2px; height: 5px; background: #d2a0b7; border-radius: 2px; }
+.music-bars i:nth-child(2) { height: 12px; }
+.music-bars i:nth-child(3) { height: 8px; }
+.music-toggle[aria-pressed=true] .music-bars i { animation: music-bounce 1s ease-in-out infinite alternate; }
+.music-toggle[aria-pressed=true] .music-bars i:nth-child(2) { animation-delay: -.5s; }
+.music-toggle[aria-pressed=true] .music-bars i:nth-child(3) { animation-delay: -.75s; }
+.youtube-panel { position: fixed; right: 25px; bottom: 89px; z-index: 4; width: min(330px, calc(100% - 32px)); border: 1px solid #e5c1d1; border-radius: 18px; background: #fffbfd; box-shadow: 0 12px 45px #69465125; padding: 12px; }
+.player-heading { display: flex; align-items: center; justify-content: space-between; padding: 0 0 9px 3px; font-size: 11px; color: #ae718d; }
+.player-heading > span { display: flex; align-items: center; gap: 7px; }
+.player-heading > span .icon { width: 15px; height: 15px; }
+.player-heading button { display: grid; place-items: center; width: 27px; height: 27px; border: 0; background: #faebf2; border-radius: 50%; color: #c18aa2; }
+.player-heading button .icon { width: 14px; height: 14px; }
+#youtube-frame iframe { display: block; width: 100%; aspect-ratio: 16/9; border: 0; border-radius: 8px; }
+.youtube-panel > a { display: flex; justify-content: center; align-items: center; gap: 5px; padding: 12px 2px 3px; font-size: 9px; color: #ac8799; text-decoration: underline; }
+.youtube-panel > a .icon { width: 11px; height: 11px; }
+.toast { position: fixed; z-index: 12; bottom: 95px; left: 50%; transform: translate(-50%, 15px); width: max-content; max-width: calc(100% - 32px); padding: 14px 22px; border-radius: 14px; background: #805a6b; color: #fff8fc; box-shadow: 0 8px 25px #69465122; font-size: 12px; text-align: center; line-height: 1.7; opacity: 0; pointer-events: none; transition: opacity .25s, transform .25s; }
+.toast.visible { opacity: 1; transform: translate(-50%, 0); }
+.confetti { position: fixed; inset: 0; pointer-events: none; z-index: 10; overflow: hidden; }
+.confetti i { position: absolute; top: -30px; color: #d187a4; animation: fall 3.5s ease-in forwards; }
+.confetti i:nth-child(3n+2) { color: #b9a7d2; }
+.confetti i:nth-child(3n+3) { color: #d6b782; }
+.confetti .icon { width: 100%; height: 100%; fill: currentColor; stroke-width: 1; }
+.flames { transform-box: fill-box; transform-origin: center bottom; animation: flicker 1.6s ease-in-out infinite alternate; transition: opacity .5s; }
+.candles-out .flames { opacity: 0; animation: none; }
+body.personalized .personalize, body.personalized .album-empty { display: none; }
+@keyframes gentle-float { 50% { transform: translateY(-7px) rotate(1deg); } }
+@keyframes heart-pop { 0% { transform: scale(.7); } 60% { transform: scale(1.15); } 100% { transform: scale(1); } }
+@keyframes shake { 20%, 60% { transform: translateX(-5px); } 40%, 80% { transform: translateX(5px); } }
+@keyframes reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes flicker { to { transform: scale(.94, 1.08); } }
+@keyframes fall { to { transform: translate(var(--drift), 110vh) rotate(360deg); opacity: 0; } }
+@keyframes music-bounce { to { height: 14px; } }
+@media (min-width: 1500px) { .lock-layout { max-width: 1090px; gap: 75px; } .lock-card { max-width: 440px; padding: 32px 44px 26px; } .keypad button { min-height: 42px; } }
+@media (max-width: 1000px) {
+  .lock-layout { gap: 25px; max-width: 900px; }
+  .lock-art { min-height: 450px; }
+  .art-label { font-size: 14px; left: 20px; }
+  .art-bubble { font-size: 10px; padding: 12px; right: 0; top: 98px; }
+  .recipient-card { right: 0; bottom: 46px; padding: 13px; }
+  .love-orbit { height: 320px; top: 90px; left: 0; right: 0; }
+  .floating-daisy { left: -10px; top: 128px; }
+  .art-handwriting { font-size: 13px; left: 4px; }
+  .lock-card { padding-inline: 25px; }
+  .hero { gap: 35px; padding-inline: 35px; }
+  .hero h1 { font-size: 62px; }
+  .hero h1 > .icon { right: 0; width: 30px; height: 30px; }
+  .cake-card { min-height: auto; padding: 44px 14px 28px; }
+  .cake { height: 240px; }
+  .cake-caption { font-size: 26px; }
+  .cake-subtitle { font-size: 9px; }
+  .gift-tag { right: -12px; padding: 12px; font-size: 10px; }
+  .birthday-sticker { width: 65px; height: 65px; left: -15px; }
+  .wish { padding: 23px; }
+  .wish-number { right: 22px; font-size: 8px; }
+  .letter-section { margin-inline: 30px; padding: 40px 35px 40px 20px; }
+  .letter-section h2 { font-size: 30px; }
+  .letter-stamp { right: 17px; top: 16px; width: 54px; height: 54px; }
+  .photo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .lock-screen { padding-inline: 22px; }
+  .lock-header { padding: 21px 0; }
+  .lock-header .brand { font-size: 13px; }
+  .tiny-note { font-size: 9px; }
+  .lock-layout { grid-template-columns: .8fr 1fr; gap: 20px; }
+  .lock-art { min-height: 370px; }
+  .love-orbit { height: 250px; top: 65px; }
+  .art-label { font-size: 11px; top: 10px; left: 0; }
+  .art-bubble { font-size: 9px; padding: 9px; top: 72px; right: -15px; }
+  .art-bubble .icon { width: 12px; height: 12px; }
+  .floating-daisy .icon { width: 30px; height: 30px; }
+  .floating-daisy { top: 77px; left: -7px; }
+  .recipient-card { bottom: 36px; right: -13px; font-size: 12px; padding: 11px; gap: 8px; }
+  .recipient-card small { font-size: 7px; }
+  .postmark { width: 27px; height: 34px; }
+  .tiny-heart { left: -9px; bottom: 92px; }
+  .tiny-spark { bottom: 120px; right: -14px; }
+  .tiny-spark .icon { width: 22px; height: 22px; }
+  .art-handwriting { font-size: 11px; bottom: 0; left: 0; }
+  .lock-card { padding-inline: 20px; }
+  .lock-card h1 { font-size: 25px; }
+  .lock-card h1 em { font-size: 29px; }
+  .header { padding: 20px 25px; }
+  .header .brand { font-size: 12px; }
+  .header nav { gap: 17px; font-size: 10px; }
+  .hero { padding: 55px 28px 65px; gap: 25px; }
+  .birthday-badge { font-size: 6px; letter-spacing: .9px; padding: 7px 9px; }
+  .hero h1 { font-size: 49px; letter-spacing: -2px; }
+  .hero h1 em { letter-spacing: -2px; }
+  .hero h1 > .icon { top: 47px; right: -4px; width: 25px; height: 25px; }
+  .intro { font-size: 11px; }
+  .hero-copy .primary { font-size: 10px; gap: 12px; padding: 15px; }
+  .handwritten { font-size: 10px; }
+  .love-pills { gap: 10px; font-size: 7px; }
+  .cake { height: 205px; }
+  .cake-card { padding: 36px 10px 23px; border-radius: 130px 130px 20px 20px; }
+  .card-topline { font-size: 6px; letter-spacing: 1.2px; }
+  .cake-caption { font-size: 23px; }
+  .cake-subtitle { font-size: 8px; }
+  .candle-button { font-size: 9px; padding: 10px 13px; }
+  .gift-tag small { font-size: 7px; }
+  .gift-tag { bottom: -2px; font-size: 9px; gap: 8px; }
+  .tag-icon { width: 27px; height: 30px; }
+  .birthday-sticker { width: 57px; height: 57px; font-size: 9px; left: -10px; bottom: 25px; }
+  .birthday-sticker em { font-size: 18px; }
+  .birthday-sticker .icon { width: 12px; height: 12px; }
+  .orbit-label { font-size: 11px; right: 25px; }
+  .spark-one { left: -12px; }
+  .spark-one .icon { width: 25px; height: 25px; }
+  .heart-one { right: -7px; }
+  .heart-one .icon { width: 26px; height: 26px; }
+  .ribbon { justify-content: flex-start; gap: 24px; font-size: 8px; }
+  .wish-grid { gap: 15px; }
+  .wish { padding: 20px; }
+  .wish-number { display: none; }
+  .wish h3 { font-size: 19px; }
+  .wish p { font-size: 11px; }
+  .wishes { padding-inline: 25px; }
+  h2 { font-size: 32px; }
+  .letter-section { grid-template-columns: .8fr 1.2fr; margin-inline: 25px; padding-inline: 18px; }
+  .letter-section h2 { font-size: 25px; }
+  .letter-content { padding-left: 0; }
+  .letter-section p { font-size: 10px; }
+  .letter-postscript { font-size: 9px; }
+  .letter-stamp { width: 42px; height: 42px; top: 10px; right: 12px; }
+  .letter-stamp .icon { width: 14px; height: 14px; }
+  .letter-stamp span { font-size: 5px; }
+  .letter-content .section-label { font-size: 8px; letter-spacing: 1.4px; }
+  .footer { padding-inline: 25px; }
+  .footer .brand { font-size: 9px; }
+  .footer > span { font-size: 9px; }
+}
+@media (max-width: 600px) {
+  .lock-screen { padding-inline: 20px; }
+  .lock-header { padding: 20px 2px 24px; }
+  .lock-header .brand > .icon { width: 22px; height: 22px; }
+  .tiny-note { font-size: 8px; gap: 5px; }
+  .tiny-note .icon { width: 11px; height: 11px; }
+  .lock-layout { display: flex; justify-content: center; padding: 12px 0 32px; }
+  .lock-art { display: none; }
+  .lock-card { max-width: 370px; padding: 28px 28px 23px; }
+  .mobile-mascot { display: block; position: absolute; width: 73px; height: 58px; top: 19px; right: 14px; transform: rotate(8deg); opacity: .85; }
+  .lock-card h1 { font-size: 28px; }
+  .lock-card h1 em { font-size: 32px; }
+  .lock-footer { flex-direction: column; gap: 8px; text-align: center; font-size: 9px; padding: 0 0 22px; }
+  .lock-footer > span:last-child { font-size: 11px; }
+  .header { padding: 18px 22px; }
+  .header nav > a { display: none; }
+  .header .brand { font-size: 12px; }
+  .relock-button { font-size: 9px; padding: 8px 10px; }
+  .hero { grid-template-columns: 1fr; text-align: center; padding: 43px 26px 55px; gap: 37px; }
+  .birthday-badge { font-size: 7px; letter-spacing: 1px; padding: 8px 11px; }
+  .hero h1 { max-width: 370px; font-size: clamp(50px, 13.7vw, 65px); letter-spacing: -2px; margin: 24px auto 17px; }
+  .hero h1 em { letter-spacing: -2.5px; }
+  .hero h1 > .icon { top: 60px; right: -2px; width: 29px; height: 29px; }
+  .intro { font-size: 12px; line-height: 1.85; margin: 20px 0 24px; }
+  .hero-copy .primary { font-size: 12px; gap: 17px; padding: 16px 21px; }
+  .handwritten { font-size: 11px; justify-content: center; }
+  .handwritten .icon { width: 13px; height: 13px; }
+  .love-pills { justify-content: center; gap: 18px; font-size: 8px; margin-top: 23px; }
+  .hero-art { width: 100%; max-width: 350px; justify-self: center; padding-inline: 17px; margin-top: 10px; }
+  .cake-card { padding: 44px 16px 27px; border-radius: 150px 150px 22px 22px; }
+  .card-topline { font-size: 7px; letter-spacing: 1.3px; }
+  .cake { height: 250px; }
+  .cake-caption { font-size: 28px; }
+  .cake-subtitle { font-size: 9px; }
+  .candle-button { font-size: 11px; padding: 11px 17px; }
+  .orbit-label { font-size: 12px; top: -6px; right: 32px; }
+  .spark-one { left: 0; top: 75px; }
+  .heart-one { right: 0; top: 37px; }
+  .heart-one .icon { width: 33px; height: 33px; }
+  .birthday-sticker { left: 0; bottom: 27px; width: 67px; height: 67px; }
+  .birthday-sticker em { font-size: 22px; }
+  .gift-tag { bottom: 0; right: 0; padding: 13px; font-size: 10px; }
+  .gift-tag small { font-size: 7px; }
+  .tag-icon { width: 30px; height: 34px; }
+  .ribbon { gap: 23px; padding-block: 16px; font-size: 7px; }
+  .wishes { padding: 55px 25px 20px; }
+  .section-label { font-size: 8px; letter-spacing: 1.6px; }
+  h2 { font-size: 29px; line-height: 1.35; letter-spacing: -.8px; margin: 14px 0 16px; }
+  h2 em { font-size: 1.12em; }
+  .section-intro { font-size: 11px; margin-bottom: 28px; }
+  .wish-grid { grid-template-columns: 1fr; gap: 22px; padding: 0 2px; }
+  .wish { padding: 25px; border-radius: 19px 19px 30px 19px; }
+  .wish:nth-child(2) { transform: rotate(1deg); }
+  .wish-number { display: block; top: 38px; font-size: 9px; right: 25px; }
+  .wish h3 { font-size: 23px; margin-top: 19px; }
+  .wish p { font-size: 12px; }
+  .album { padding: 50px 25px 48px; }
+  .photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 15px; }
+  .photo-card { padding: 7px 7px 13px; }
+  .photo-card span { font-size: 10px; }
+  .album-empty { padding: 25px 18px; }
+  .album-empty .secondary { font-size: 10px; gap: 6px; padding: 12px; }
+  .album-empty .secondary .icon { width: 15px; height: 15px; }
+  .album-empty p { font-size: 11px; }
+  .personalize summary { font-size: 10px; }
+  .personalize-actions .secondary { font-size: 10px; }
+  .letter-section { display: flex; flex-direction: column; text-align: center; margin-inline: 22px; padding: 25px 18px 35px; border-radius: 22px; }
+  .letter-mini-art svg { width: 220px; margin-top: -3px; margin-bottom: 6px; }
+  .letter-section h2 { font-size: 29px; }
+  .letter-section p { font-size: 11px; margin: 18px 0 23px; }
+  .letter-content .section-label { font-size: 8px; }
+  .letter-stamp { width: 55px; height: 55px; top: 20px; right: 20px; }
+  .letter-stamp .icon { width: 19px; height: 19px; }
+  .letter-stamp span { font-size: 6px; }
+  .letter-postscript { font-size: 10px; }
+  .footer { flex-wrap: wrap; padding: 28px 25px 105px; gap: 18px; }
+  .footer .brand { font-size: 9px; gap: 7px; }
+  .footer .brand .icon { width: 17px; height: 17px; }
+  .back-top { margin-left: auto; font-size: 8px; }
+  .footer > span { order: 3; flex-basis: 100%; text-align: center; font-size: 10px; }
+  dialog { padding: 32px 25px; border-radius: 20px; }
+  dialog h2 { font-size: 31px; }
+  .letter-body p { font-size: 12px; }
+  .music-toggle { bottom: 14px; right: 14px; padding: 9px 13px 9px 9px; gap: 9px; }
+  .music-disc { width: 31px; height: 31px; border-width: 4px; }
+  .music-label { font-size: 10px; }
+  .music-label small { font-size: 7px; }
+  .music-bars { margin-left: 4px; }
+  .youtube-panel { right: 14px; bottom: 80px; width: min(315px, calc(100% - 28px)); }
+  .toast { bottom: 85px; font-size: 11px; padding: 12px 17px; }
+}
+@media (max-width: 360px) {
+  .lock-screen { padding-inline: 15px; }
+  .tiny-note { max-width: 110px; font-size: 8px; }
+  .lock-card { padding-inline: 21px; }
+  .lock-card h1 { font-size: 25px; }
+  .lock-card h1 em { font-size: 29px; }
+  .keypad button { min-height: 38px; }
+  .lock-footer { font-size: 8px; }
+  .hero { padding-inline: 21px; }
+  .hero h1 { font-size: 49px; }
+  .hero h1 > .icon { width: 23px; height: 23px; top: 49px; right: 0; }
+  .hero-copy .primary { font-size: 11px; }
+  .handwritten { font-size: 10px; }
+  .love-pills { gap: 12px; font-size: 7px; }
+  .cake { height: 220px; }
+  .cake-caption { font-size: 25px; }
+  .cake-subtitle { font-size: 8px; }
+  .gift-tag { padding: 11px; }
+  h2 { font-size: 26px; }
+  .letter-section h2 { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .confetti { display: none; }
+}

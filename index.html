@@ -3,28 +3,101 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#fff9f2">
-<meta name="description" content="Một món quà nhỏ, dành cho Hanh trong ngày thật đặc biệt. Chúc mừng sinh nhật em yêu!">
-<title>Gửi Hanh, với tất cả yêu thương ♡</title>
+<meta name="theme-color" content="#fff5f6">
+<meta name="description" content="Sinh nhật Hanh. Có ảnh, có nhạc, có quà. Mở khóa rồi xem nhé.">
+<title>Hanh — Birthday Mode</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23fff0f4'/%3E%3Cpath d='M20 31 8 19C0 8 15 3 20 12 25 3 40 8 32 19Z' fill='%23d97492'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
-<body>
+<body class="is-locked personalized">
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13M9 8l11-2"/><ellipse cx="5.5" cy="18.5" rx="3.5" ry="2.5"/><ellipse cx="16.5" cy="16.5" rx="3.5" ry="2.5"/></symbol>
+<symbol id="i-backspace" viewBox="0 0 24 24"><path d="M9 5h11v14H9l-7-7 7-7ZM12 9l6 6m0-6-6 6"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3Z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></symbol>
+<symbol id="i-flower" viewBox="0 0 24 24"><path d="M12 5c-5-7-11 1-6 5-8 2-4 11 3 8 0 8 10 8 9 0 7 3 11-6 3-8 5-4-1-12-6-5Z" transform="translate(-1.5 0) scale(.95)"/><circle cx="11.5" cy="12" r="3"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="love-friends" viewBox="0 0 400 310">
+<ellipse cx="200" cy="282" rx="140" ry="13" fill="#dec1ca" opacity=".4"/>
+<g stroke="#ad7e82" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M72 241c-15-48 2-96 50-98 48-3 73 47 58 98-8 26-98 27-108 0Z" fill="#fff9f0"/>
+<path d="M77 107C49 37 62 4 82 20c17 13 26 43 27 75m26 0c4-74 28-101 40-78 13 24-5 65-13 91" fill="#fff9f0"/>
+<path d="M83 80c-13-34-18-53-7-46 8 6 15 22 21 46m53-1c7-28 16-51 18-43 3 11-4 30-9 48" fill="#f3c7ce" stroke="none"/>
+<path d="M64 125c0-57 118-61 119 0 1 50-119 53-119 0Z" fill="#fff9f0"/>
+<ellipse cx="90" cy="137" rx="12" ry="7" fill="#f2c2c7" stroke="none"/><ellipse cx="158" cy="137" rx="12" ry="7" fill="#f2c2c7" stroke="none"/>
+<path d="M100 121v5m47-5v5" stroke="#795862" stroke-width="4"/><path d="m119 132 5 3 5-3m-5 3v4m0 0c-4 5-9 1-9-1m9 1c4 5 9 1 9-1" stroke="#795862" stroke-width="2"/>
+<path d="M233 243c-18-46-5-93 45-95 47-3 70 43 57 92-8 26-91 30-102 3Z" fill="#e4bba3"/>
+<circle cx="242" cy="94" r="24" fill="#e4bba3"/><circle cx="323" cy="94" r="24" fill="#e4bba3"/>
+<circle cx="242" cy="94" r="13" fill="#c99785" stroke="none"/><circle cx="323" cy="94" r="13" fill="#c99785" stroke="none"/>
+<path d="M224 131c-3-68 117-69 118-1 0 51-116 52-118 1Z" fill="#e4bba3"/>
+<ellipse cx="246" cy="141" rx="12" ry="7" fill="#df9e9e" stroke="none"/><ellipse cx="321" cy="141" rx="12" ry="7" fill="#df9e9e" stroke="none"/>
+<path d="M256 125v5m52-5v5" stroke="#795862" stroke-width="4"/>
+<ellipse cx="283" cy="140" rx="19" ry="14" fill="#fae5d3" stroke="none"/><path d="m279 137 4 3 4-3m-4 3v3m-7 1c3 5 11 5 14 0" stroke="#795862" stroke-width="2"/>
+<path d="M95 205c-14 19-12 49 3 56m57-56c13 18 13 47 1 56m103-51c-10 19-10 42 1 53m47-54c12 17 11 41 0 53" fill="none"/>
+<path d="m119 193 80-60 81 60v71H119Z" fill="#f8ccd4"/>
+<path d="m119 193 80 41 81-41" fill="#ffe4e6"/>
+<path d="m119 264 80-56 81 56" fill="#f4bac8"/>
+<path d="M177 184c-18-20 7-39 22-20 15-19 40 0 22 20l-22 20Z" fill="#d97492" stroke="none"/>
+<ellipse cx="113" cy="212" rx="17" ry="12" fill="#fff9f0" transform="rotate(22 113 212)"/>
+<ellipse cx="286" cy="212" rx="17" ry="12" fill="#e4bba3" transform="rotate(-22 286 212)"/>
+<path d="M181 66c-8-11 5-19 12-8 7-11 20-3 12 8l-12 12Z" fill="#ec9bb3" stroke="none"/>
+</g><g fill="#c5b6d5"><path d="m53 164 4-11 4 11 11 4-11 4-4 11-4-11-11-4Z"/><path d="m348 46 3-8 3 8 8 3-8 3-3 8-3-8-8-3Z"/></g><circle cx="344" cy="203" r="4" fill="#edb2bd"/><circle cx="50" cy="81" r="3" fill="#edb2bd"/>
+</symbol></defs></svg>
 <div class="confetti" aria-hidden="true"></div>
-<header class="header"><a class="brand" href="#home" aria-label="Về đầu trang"><span class="brand-heart">♡</span> dành riêng cho Hanh<span class="brand-dot">.</span></a><span class="header-note">MỘT NGÀY ĐẶC BIỆT, MỘT NGƯỜI ĐẶC BIỆT</span><a class="header-link" href="#letter">Gửi em một chút yêu <span>↗</span></a></header>
+<section class="lock-screen" id="lock-screen" aria-labelledby="lock-title">
+<header class="lock-header"><a class="brand" href="#"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg><span>birthday <em>mode.</em></span></a><span class="tiny-note">made for Hanh. no boring birthdays. <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span></header>
+<main class="lock-layout">
+<div class="lock-art" aria-hidden="true">
+<div class="art-label">birthday mission: make Hanh smile</div>
+<div class="love-orbit"></div>
+<div class="art-bubble">Có quà. Mở thử đi! <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></div>
+<svg class="friends-art" viewBox="0 0 400 310"><use href="#love-friends"/></svg>
+<div class="floating-daisy"><svg class="icon " aria-hidden="true"><use href="#i-flower"/></svg></div><div class="tiny-spark"><svg class="icon " aria-hidden="true"><use href="#i-spark"/></svg></div><div class="tiny-heart"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></div>
+<div class="recipient-card"><span class="postmark"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><span>to: <strong>Hanh</strong><small>from: đồng đội của em</small></span></div>
+<p class="art-handwriting">Mật mã nhỏ. Bất ngờ không nhỏ.</p>
+</div>
+<div class="lock-card" id="lock-card">
+<div class="card-tape" aria-hidden="true"></div>
+<svg class="mobile-mascot" viewBox="0 0 400 310" aria-hidden="true"><use href="#love-friends"/></svg>
+<div class="lock-icon"><svg class="icon " aria-hidden="true"><use href="#i-lock"/></svg><span>♡</span></div>
+<p class="eyebrow">CHỈ DÀNH RIÊNG CHO HANH</p>
+<h1 id="lock-title">Hanh ơi,<br><em>quà tới rồi.</em></h1>
+<p class="lock-description">Một nhiệm vụ nhỏ trước khi mở quà:<br>nhập đúng bốn con số.</p>
+<form id="unlock-form" novalidate>
+<label class="sr-only" for="passcode">Mật mã gồm 4 chữ số</label>
+<div class="pin-entry" id="pin-entry">
+<div class="pin-dots" aria-hidden="true"><span class="pin-slot"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><span class="pin-slot"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><span class="pin-slot"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><span class="pin-slot"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span></div>
+<input id="passcode" name="passcode" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" enterkeyhint="go" aria-describedby="code-message" spellcheck="false">
+</div>
+<p class="code-message" id="code-message" role="status" aria-live="polite">Bốn con số. Một ngày không thể quên.</p>
+<div class="keypad" aria-label="Bàn phím nhập mật mã"><button type="button" data-digit="1" aria-label="Số 1">1</button><button type="button" data-digit="2" aria-label="Số 2">2</button><button type="button" data-digit="3" aria-label="Số 3">3</button><button type="button" data-digit="4" aria-label="Số 4">4</button><button type="button" data-digit="5" aria-label="Số 5">5</button><button type="button" data-digit="6" aria-label="Số 6">6</button><button type="button" data-digit="7" aria-label="Số 7">7</button><button type="button" data-digit="8" aria-label="Số 8">8</button><button type="button" data-digit="9" aria-label="Số 9">9</button><button class="keypad-special" id="hint-button" type="button" aria-label="Gợi ý mật mã" aria-expanded="false"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></button><button type="button" data-digit="0" aria-label="Số 0">0</button><button class="keypad-special" id="delete-digit" type="button" aria-label="Xóa một chữ số"><svg class="icon " aria-hidden="true"><use href="#i-backspace"/></svg></button></div>
+<p class="code-hint" id="code-hint" hidden>Gợi ý nè: ngày 06, tháng 11 <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></p>
+<label class="music-preference"><input id="unlock-music" type="checkbox" checked><span class="custom-check" aria-hidden="true"></span><svg class="icon " aria-hidden="true"><use href="#i-music"/></svg><span>Bật nhạc khi mở quà</span></label>
+<button class="primary unlock-button" id="unlock-button" type="submit"><span>Mở quà thôi</span><svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
+</form>
+<p class="lock-footnote">Hôm nay nghỉ deadline, bật sinh nhật. <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></p>
+<noscript><p class="noscript-message">Em bật JavaScript trong trình duyệt để mở thiệp nhé.</p></noscript>
+</div>
+</main>
+<footer class="lock-footer"><span>hôm nay ưu tiên: ăn ngon, cười nhiều, nhận quà.</span><span>made for Hanh. no boring birthdays. <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span></footer>
+</section>
+<div id="birthday-content" hidden inert>
+<header class="header"><a class="brand" href="#home"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg><span>hôm nay của <em>Hanh.</em></span></a><nav aria-label="Điều hướng thiệp"><a href="#wishes">Lời chúc</a><a href="#letter">Nhắn Hanh</a><button id="relock-button" class="relock-button" type="button"><svg class="icon " aria-hidden="true"><use href="#i-lock"/></svg><span>Khóa thiệp</span></button></nav></header>
 <main id="home">
 <section class="hero" aria-labelledby="hero-title">
-<div class="hero-copy"><div class="eyebrow"><span></span> HÔM NAY, CẢ THẾ GIỚI DỊU DÀNG HƠN MỘT CHÚT</div>
-<h1 id="hero-title">Chúc mừng<br>sinh nhật,<br><em>Hanh yêu</em><span class="title-heart">♡</span></h1>
-<p class="intro">Cảm ơn em đã đến, để những ngày bình thường<br class="desktop-break"> của anh trở thành những ngày thật đáng nhớ.</p>
-<button class="primary" id="open-letter">Mở món quà nhỏ của anh <span>↗</span></button>
-<div class="handwritten">Một chút bất ngờ, rất nhiều yêu thương <span>⤴</span></div>
+<div class="hero-copy"><div class="birthday-badge"><svg class="icon " aria-hidden="true"><use href="#i-flower"/></svg><span>BIRTHDAY MODE: ON</span></div>
+<h1 id="hero-title" tabindex="-1">Happy<br>birthday,<br><em>Hanh!</em><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></h1>
+<p class="intro">Tuổi mới: vui hơn, tự tin hơn, ít deadline hơn.<br>Thích gì cứ làm, muốn gì cứ thử.<br>Anh luôn có mặt trong team của em.</p>
+<button class="primary" id="open-letter">Có lời nhắn cho em <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button>
+<span class="handwritten">Hôm nay em làm nhân vật chính. <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span>
+<div class="love-pills"><span><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg> +1 tuổi, +100 tự tin</span><span><svg class="icon " aria-hidden="true"><use href="#i-spark"/></svg> Bật chế độ nhận quà</span></div>
 </div>
-<div class="hero-art">
-<span class="orbit-label">made with love, just for you</span><span class="art-spark spark-one">✧</span><span class="art-spark spark-two">✦</span><span class="floating-heart heart-one">♡</span><span class="floating-heart heart-two">♡</span>
-<div class="cake-card"><div class="card-topline"><span>TO MY FAVORITE PERSON</span><span>♡</span></div>
-<div class="cake-scene"><div class="cake-glow"></div>
-<svg class="cake" viewBox="0 0 400 360" role="img" aria-label="Chiếc bánh sinh nhật màu hồng với ba ngọn nến dành cho Hanh">
+<div class="hero-art"><span class="orbit-label">new age, same awesome Hanh</span><span class="art-spark spark-one"><svg class="icon " aria-hidden="true"><use href="#i-spark"/></svg></span><span class="floating-heart heart-one"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span>
+<div class="cake-card"><div class="card-topline"><span>IT'S YOUR DAY. OWN IT.</span><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></div><div class="cake-scene"><div class="cake-glow"></div><svg class="cake" viewBox="0 0 400 360" role="img" aria-label="Chiếc bánh sinh nhật màu hồng với ba ngọn nến dành cho Hanh">
 <defs><linearGradient id="cakePink" x2="0" y2="1"><stop stop-color="#f8bdc6"/><stop offset="1" stop-color="#e895aa"/></linearGradient><linearGradient id="icing" x2="0" y2="1"><stop stop-color="#fff8e9"/><stop offset="1" stop-color="#ffe4d7"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#a36769" flood-opacity=".13"/></filter></defs>
 <ellipse cx="200" cy="301" rx="154" ry="23" fill="#e2b0a2" opacity=".2"/>
 <g filter="url(#shadow)"><ellipse cx="200" cy="282" rx="145" ry="29" fill="#e9d5c2"/><ellipse cx="200" cy="276" rx="145" ry="27" fill="#fffcf4"/><path d="M81 169v94c0 39 238 39 238 0v-94Z" fill="url(#cakePink)"/><path d="M82 232c58 27 179 28 236 0" fill="none" stroke="#e68ea2" stroke-width="3" opacity=".5"/>
@@ -36,21 +109,23 @@
 <g stroke="#fff3e1" stroke-width="3"><path d="m146 116 10 8m-10 8 10 8m-10 8 10 8m40-54 9 8m-9 8 9 8m-9 8 9 8m-9 8 9 8m40-41 10 8m-10 8 10 8m-10 8 10 8"/></g>
 <g stroke="#745446" stroke-width="2"><path d="M151 104v-7m49-8v-7m49 23v-7"/></g>
 <g class="flames" fill="#efb64b"><path d="M151 98c-17-4-6-21 0-27 1 11 14 20 0 27Z"/><path d="M200 83c-17-4-6-21 0-27 1 11 14 20 0 27Z"/><path d="M249 99c-17-4-6-21 0-27 1 11 14 20 0 27Z"/></g>
-</g></svg>
-</div><div class="cake-caption">Make a wish, Hanh.</div><p class="cake-subtitle">Mọi điều tốt đẹp nhất đều xứng đáng với em.</p><button class="candle-button" id="blow-candles"><span>✧</span> Nhắm mắt, ước một điều & thổi nến</button></div>
-<div class="gift-tag"><span>♡</span><div>Gửi người anh thương<small>Hôm nay và cả những ngày sau.</small></div></div>
-</div>
+</g></svg></div><div class="cake-caption">Ước đi. Rồi làm thật.</div><p class="cake-subtitle">Điều ước đầu tiên: có một ngày thật đã.</p><button class="candle-button" id="blow-candles"><svg class="icon " aria-hidden="true"><use href="#i-spark"/></svg><span>Thổi nến thôi</span></button></div>
+<div class="gift-tag"><span class="tag-icon"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><div>Hanh’s birthday pass<small>Hợp lệ cả ngày. Nhận quà không giới hạn.</small></div></div><div class="birthday-sticker">birthday<br><em>girl!</em><svg class="icon " aria-hidden="true"><use href="#i-flower"/></svg></div></div>
 </section>
-<div class="ribbon"><span>HAPPY BIRTHDAY, MY LOVE</span><span>✦</span><span>THẬT MAY VÌ CÓ EM</span><span>♡</span><span>HAPPY BIRTHDAY, HANH</span><span>✦</span><span>YOU ARE SO LOVED</span><span>♡</span></div>
-<section class="album" id="album" aria-labelledby="album-title"><div class="section-label">NHỮNG MẢNH GHÉP THẬT ĐÁNG YÊU</div><h2 id="album-title">Hanh trong mắt anh,<br><em>luôn là điều đẹp nhất.</em></h2><p class="section-intro">Từ cô bé ngày ấy, đến người anh thương hôm nay.</p><div class="photo-grid" id="photo-grid"></div><div class="album-empty" id="album-empty"><span>♡</span><p>Một góc nhỏ để lưu những khoảnh khắc của Hanh.</p><label class="secondary" for="photo-input">Thêm những tấm ảnh của em</label></div><div class="personalize"><label class="secondary" for="photo-input">＋ Thêm ảnh</label><label class="secondary" for="music-input">♫ Chọn file nhạc “Dành cho em”</label><button class="secondary" id="export-card">↓ Tải thiệp đã ghép ảnh & nhạc</button><p>Đã chọn bài hát của anh trên YouTube. Thêm ảnh rồi tải thiệp để giữ trọn món quà.</p></div><input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden><input id="music-input" type="file" accept="audio/*" hidden></section>
-<section class="wishes" aria-labelledby="wishes-title"><div class="section-label">NHỮNG ĐIỀU ANH MONG CHO EM</div><h2 id="wishes-title">Một tuổi mới, <em>ngàn điều dịu dàng.</em></h2><p class="section-intro">Chẳng mong điều gì lớn lao, chỉ mong em luôn…</p><div class="wish-grid"><article class="wish"><span class="wish-icon">☀</span><span class="wish-number">01 /</span><h3>Cười thật nhiều</h3><p>Để mỗi ngày của em đều có những niềm vui nhỏ, và nụ cười ấy mãi rạng rỡ như hôm nay.</p></article><article class="wish"><span class="wish-icon">✧</span><span class="wish-number">02 /</span><h3>Chạm đến ước mơ</h3><p>Cứ tự tin bước về phía những điều em yêu. Anh luôn ở đây, cổ vũ cho em bằng cả trái tim.</p></article><article class="wish"><span class="wish-icon">♡</span><span class="wish-number">03 /</span><h3>Được yêu thật nhiều</h3><p>Được bình yên làm chính mình, được nâng niu, và luôn biết rằng em quan trọng biết bao.</p></article></div></section>
-<section class="letter-section" id="letter"><div class="letter-decoration" aria-hidden="true">♡</div><div class="section-label">CÓ MỘT ĐIỀU ANH MUỐN NÓI</div><h2>Gửi Hanh,<br><em>người anh thương nhất.</em></h2><p>Giữa rất nhiều điều đẹp đẽ trên thế giới,<br>được gặp em vẫn là điều anh thấy may mắn nhất.</p><button class="primary" id="read-letter">Đọc thư của anh <span>♡</span></button><span class="letter-postscript">P.S. Hôm nay, em chỉ cần thật hạnh phúc thôi nhé.</span></section>
+<div class="ribbon" aria-hidden="true"><span>HAPPY BIRTHDAY, HANH</span><svg class="icon " aria-hidden="true"><use href="#i-flower"/></svg><span>THÊM TUỔI, THÊM CHẤT</span><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg><span>HAPPY BIRTHDAY, HANH</span><svg class="icon " aria-hidden="true"><use href="#i-flower"/></svg><span>BIRTHDAY MODE: ON</span><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></div>
+<section class="wishes" id="wishes" aria-labelledby="wishes-title"><div class="section-label">A FEW THINGS FOR YOUR NEXT CHAPTER</div><h2 id="wishes-title">Tuổi mới tới rồi.<br><em>Cứ thế mà tỏa sáng.</em></h2><p class="section-intro">Vui hết mình. Thử điều mới. Luôn có đồng đội.</p><div class="wish-grid"><article class="wish"><span class="wish-icon"><svg class="icon " aria-hidden="true"><use href="#i-sun"/></svg></span><span class="wish-number">điều ước 01</span><h3>Vui đúng gu</h3><p>Có nhiều chuyến đi hay, món ăn ngon và những ngày chẳng phải chạy deadline.</p><span class="wish-doodle" aria-hidden="true"><svg class="icon " aria-hidden="true"><use href="#i-spark"/></svg></span></article><article class="wish"><span class="wish-icon"><svg class="icon " aria-hidden="true"><use href="#i-spark"/></svg></span><span class="wish-number">điều ước 02</span><h3>Chơi lớn với ước mơ</h3><p>Thích gì thì thử. Muốn gì thì làm. Sai thì sửa. Em làm được nhiều hơn em nghĩ.</p><span class="wish-doodle" aria-hidden="true"><svg class="icon " aria-hidden="true"><use href="#i-flower"/></svg></span></article><article class="wish"><span class="wish-icon"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><span class="wish-number">điều ước 03</span><h3>Luôn có đồng đội</h3><p>Ngày nào ổn thì mình đi chơi. Ngày nào không ổn thì gọi anh. Không cần nghĩ nhiều.</p><span class="wish-doodle" aria-hidden="true"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span></article></div></section>
+<section class="album" id="album" aria-labelledby="album-title"><div class="section-label">HANH, THROUGH THE YEARS</div><h2 id="album-title">Một người.<br><em>Nhiều phiên bản chất.</em></h2><p class="section-intro">Từ ngày bé đến bây giờ. Chất riêng thì vẫn vậy.</p><div class="photo-grid" id="photo-grid"></div><div class="album-empty" id="album-empty"><span class="album-heart"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><p>Một chiếc album nhỏ,<br>để dành cho những khoảnh khắc của em.</p><button class="secondary" id="add-first-photos" type="button"><svg class="icon " aria-hidden="true"><use href="#i-flower"/></svg> Thêm những tấm ảnh của Hanh</button></div>
+<details class="personalize"><summary>Trang trí thêm cho món quà <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></summary><div class="personalize-actions"><button class="secondary" id="add-photos" type="button">+ Thêm ảnh</button><button class="secondary" id="add-music" type="button"><svg class="icon " aria-hidden="true"><use href="#i-music"/></svg> Chọn file nhạc khác</button><button class="secondary" id="export-card" type="button">Tải thiệp đã ghép ảnh & nhạc <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button><p>Thêm ảnh yêu thích rồi tải thiệp để giữ lại món quà. Ảnh đã chọn chỉ được lưu khi em tải thiệp nhé.</p></div></details><input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden><input id="music-input" type="file" accept="audio/*" hidden></section>
+<section class="letter-section" id="letter"><div class="letter-mini-art" aria-hidden="true"><svg viewBox="0 0 400 310"><use href="#love-friends"/></svg></div><div class="letter-content"><div class="section-label">A MESSAGE FOR HANH</div><h2>Một lời nhắn.<br><em>Cho tuổi mới của em.</em></h2><p>Cứ là Hanh thôi.<br>Vui hơn một chút, tự tin hơn mỗi ngày.</p><button class="primary" id="read-letter">Đọc lời nhắn <svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></button><span class="letter-postscript">P.S. Đọc xong nhớ đi ăn gì ngon.</span></div><span class="letter-stamp" aria-hidden="true"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg><span>birthday mail</span></span></section>
 </main>
-<footer><a class="brand" href="#home"><span class="brand-heart">♡</span> một món quà nhỏ, một tình yêu lớn.</a><span>For Hanh, with all my love.</span><a href="#home" class="back-top">Về đầu trang ↑</a></footer>
-<dialog id="love-letter" aria-labelledby="letter-title"><button class="close-dialog" aria-label="Đóng thư">×</button><span class="dialog-heart">♡</span><div class="section-label">MỘT BỨC THƯ CHỈ DÀNH CHO EM</div><h2 id="letter-title">Hanh yêu dấu,</h2><div class="letter-body"><p>Chúc mừng sinh nhật em, người đã khiến thế giới của anh trở nên ấm áp hơn thật nhiều.</p><p>Anh thích những khoảnh khắc giản đơn bên em: một câu chuyện chẳng đầu chẳng cuối, một nụ cười bất chợt, hay chỉ là biết rằng hôm nay em vẫn ở đây.</p><p>Tuổi mới, anh mong em luôn khỏe mạnh, bình an và đủ can đảm để theo đuổi điều mình muốn. Những ngày mệt mỏi, hãy nhớ em không phải đi một mình — anh luôn sẵn lòng lắng nghe và ở cạnh em.</p><p>Cảm ơn Hanh vì đã là chính em. Mong rằng anh sẽ được cùng em đón thêm thật nhiều sinh nhật, góp nhặt thật nhiều niềm vui và thương em thêm mỗi ngày.</p></div><p class="signature">Thương em thật nhiều,<br><em>Anh ♡</em></p></dialog>
-<button class="music-toggle" id="music-toggle" aria-label="Bật nhạc Dành cho em" aria-pressed="false">♫ <span>Dành cho em</span> <span id="music-state">· Bật nhạc</span></button><section class="youtube-panel" id="youtube-panel" aria-label="Nghe bài hát Dành cho em" hidden><div class="player-heading"><span>♫ Một bài hát dành cho Hanh</span><button id="close-youtube" aria-label="Dừng nhạc và đóng trình phát">×</button></div><div id="youtube-frame"></div><a href="https://www.youtube.com/watch?v=QxXYWMIQAcQ" target="_blank" rel="noopener noreferrer">Mở trên YouTube nếu video không phát ↗</a></section><audio id="birthday-music" loop preload="metadata"></audio>
-<dialog id="photo-viewer" aria-label="Ảnh kỷ niệm của Hanh"><button class="close-dialog" aria-label="Đóng ảnh">×</button><img alt="Ảnh kỷ niệm của Hanh" id="full-photo"><p id="photo-counter"></p><div class="photo-nav"><button class="secondary" id="previous-photo" aria-label="Ảnh trước">←</button><button class="secondary" id="next-photo" aria-label="Ảnh tiếp theo">→</button></div></dialog>
-<script id="card-assets" type="application/json">{"photos":[],"music":null,"youtube":"QxXYWMIQAcQ"}</script>
+<footer class="footer"><a class="brand" href="#home"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg><span>Làm riêng cho Hanh.</span></a><span>Stay cool. Stay you.</span><a href="#home" class="back-top">Về đầu trang <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></a></footer>
+<dialog id="love-letter" aria-labelledby="letter-title"><button type="button" class="close-dialog" aria-label="Đóng thư"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button><span class="dialog-heart"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></span><div class="section-label">GỬI HANH, NHÂN DỊP THÊM MỘT TUỔI</div><h2 id="letter-title">Hanh này,</h2><div class="letter-body"><p>Chúc mừng sinh nhật Hanh!</p><p>Tuổi mới chúc em sức khỏe ổn, tinh thần tốt, tiền vào đều, deadline bớt dí. Làm điều em thích, đi nơi em muốn, và giữ nguyên cái chất riêng của mình.</p><p>Không cần lúc nào cũng phải hoàn hảo. Có hôm muốn nghỉ thì cứ nghỉ. Có gì khó cứ gọi anh — đồng đội này vẫn ở đây.</p><p>Hôm nay tạm gác việc lại. Ăn ngon, chụp hình đẹp, nhận quà và tận hưởng cho đã. Sinh nhật vui nhé!</p></div><p class="signature">Cùng team với em,<br><em>Anh.</em></p></dialog>
+<button class="music-toggle" id="music-toggle" type="button" aria-label="Bật nhạc Dành cho em" aria-pressed="false"><span class="music-disc"><svg class="icon " aria-hidden="true"><use href="#i-music"/></svg></span><span class="music-label">Dành cho em<small id="music-state">Bật một chút nhạc nhé</small></span><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+<section class="youtube-panel" id="youtube-panel" aria-label="Nghe bài hát Dành cho em" hidden><div class="player-heading"><span><svg class="icon " aria-hidden="true"><use href="#i-music"/></svg> Bài hát anh chọn cho em</span><button id="close-youtube" type="button" aria-label="Dừng nhạc và đóng trình phát"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button></div><div id="youtube-frame"></div><a href="https://www.youtube.com/watch?v=QxXYWMIQAcQ" target="_blank" rel="noopener noreferrer">Mở trên YouTube nếu video không phát <svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></a></section>
+<audio id="birthday-music" loop preload="none"></audio>
+<dialog id="photo-viewer" aria-label="Ảnh kỷ niệm của Hanh"><button type="button" class="close-dialog" aria-label="Đóng ảnh"><svg class="icon " aria-hidden="true"><use href="#i-close"/></svg></button><img alt="Ảnh kỷ niệm của Hanh" id="full-photo"><p id="photo-counter"></p><div class="photo-nav"><button class="secondary" id="previous-photo" type="button" aria-label="Ảnh trước"><svg class="icon reverse" aria-hidden="true"><use href="#i-arrow"/></svg></button><button class="secondary" id="next-photo" type="button" aria-label="Ảnh tiếp theo"><svg class="icon " aria-hidden="true"><use href="#i-arrow"/></svg></button></div></dialog>
+</div>
+<script id="card-assets" type="application/json">{"photos":["assets/photos/hanh-03.jpg","assets/photos/hanh-05.jpg","assets/photos/hanh-07.jpg","assets/photos/hanh-13.jpg","assets/photos/hanh-02.jpg","assets/photos/hanh-11.jpg","assets/photos/hanh-15.jpg","assets/photos/hanh-01.jpg","assets/photos/hanh-04.jpg","assets/photos/hanh-06.jpg","assets/photos/hanh-08.jpg","assets/photos/hanh-09.jpg","assets/photos/hanh-10.jpg","assets/photos/hanh-12.jpg","assets/photos/hanh-14.jpg"],"music":null,"youtube":"QxXYWMIQAcQ"}</script>
 <div class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
