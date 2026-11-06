@@ -1,22 +1,22 @@
-# Hanh — Birthday Mode
+# Hanh’s day — Birthday camera
 
-Website sinh nhật bằng tiếng Việt với phong cách hồng pastel, hình thỏ và gấu, lời nhắn, bánh thổi nến, album ảnh và bài hát **Dành cho em**. HTML, CSS và JavaScript thuần; không cần cài thư viện, khóa API, cơ sở dữ liệu hay bước build.
+Website sinh nhật bằng tiếng Việt với giao diện máy ảnh kỹ thuật số retro màu bạc–xanh, lời nhắn tự nhiên dành cho Hanh, bánh thổi nến, album 15 ảnh và bài hát **Dành cho em**. HTML, CSS và JavaScript thuần; không cần cài thư viện, khóa API, cơ sở dữ liệu hay bước build.
 
 ## Chạy tại máy phát triển
 
 ```sh
 cd /workspace/sinhnhathanh
-python3 -m http.server 3000 --bind 0.0.0.0
+python3 -m http.server 3000 --bind 127.0.0.1
 ```
 
 Triển khai toàn bộ `index.html`, `style.css`, `script.js` và thư mục `assets/` lên dịch vụ lưu trữ website tĩnh. Phông Nunito tiếng Việt được lưu cục bộ trong `assets/fonts/`, kèm giấy phép OFL. Chỉ trình phát YouTube cần kết nối bên ngoài.
 
 ## Mở thiệp
 
-1. Nhập **0611** bằng bàn phím số trên thiệp hoặc bàn phím thiết bị, rồi bấm **Mở quà thôi** (hoặc Enter).
+1. Nhập **0611** bằng bàn phím số trên thiệp hoặc bàn phím thiết bị, rồi bấm **Mở máy ảnh** (hoặc Enter).
 2. Mã thiếu hoặc sai sẽ có nhắc thử lại, không mở nội dung hoặc tải trình phát nhạc.
-3. Tùy chọn **Bật nhạc khi mở quà** mặc định được chọn. Bỏ chọn nếu muốn mở thiệp trước rồi bật nhạc sau.
-4. Nhấn **Khóa thiệp** để đóng lại và dừng nhạc. Tải lại trang cũng trở về màn khóa.
+3. Tùy chọn **Bật nhạc khi mở máy** mặc định được chọn. Bỏ chọn nếu muốn mở thiệp trước rồi bật nhạc sau.
+4. Nhấn **Khóa máy** để đóng lại và dừng nhạc. Tải lại trang cũng trở về màn khóa.
 
 Mật mã giao diện nằm trong hằng `PASSCODE` ở `script.js`; đây là một màn mở quà phía trình duyệt, không phải hệ thống xác thực máy chủ.
 
@@ -24,6 +24,7 @@ Mật mã giao diện nằm trong hằng `PASSCODE` ở `script.js`; đây là m
 
 - Sửa lời chúc, tên và nội dung thư trong `index.html`.
 - Sửa màu sắc, bố cục trong `style.css`.
+- Dùng hai nút mũi tên trên máy ảnh để chuyển qua 15 ảnh. Nút chụp tạo hiệu ứng flash và mở ảnh lớn; chế độ giảm chuyển động bỏ hiệu ứng flash. Nút **Lời nhắn** và **Dành cho em** mở thư và điều khiển nhạc.
 - Nhấn **Thổi nến thôi** để tắt nến, xem lời chúc và hiệu ứng trái tim; nhấn lần nữa để thắp lại.
 - Mở thư từ nút ở đầu hoặc cuối trang; nhấn Escape hoặc nút đóng để đóng thư.
 - Hỗ trợ màn hình từ 320 px, thao tác bàn phím và tùy chọn giảm chuyển động của thiết bị.

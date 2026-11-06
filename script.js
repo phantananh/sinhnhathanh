@@ -21,6 +21,8 @@ let lastTrigger;
 let photoTrigger;
 let selectedPhoto = 0;
 let toastTimer;
+let cameraIndex = 0;
+let cameraFlashTimer;
 
 function createIcon(name) {
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -51,7 +53,7 @@ function clearCodeError() {
   $('#lock-card').classList.remove('is-error');
   passcode.removeAttribute('aria-invalid');
   codeMessage.className = 'code-message';
-  codeMessage.textContent = 'Bốn con số. Một ngày không thể quên.';
+  codeMessage.textContent = 'Mật mã là một ngày đặc biệt.';
 }
 
 function enterDigit(digit) {
@@ -120,6 +122,8 @@ $('#unlock-form').addEventListener('submit', event => {
 
 function relock({ focus = true } = {}) {
   isUnlocked = false;
+  clearCameraFlash();
+  $('#camera-photo')?.removeAttribute('src');
   stopMusic();
   for (const dialog of [letter, viewer]) if (dialog.open) dialog.close();
   player.removeAttribute('src');
@@ -152,6 +156,7 @@ function openLetter(event) {
 }
 $('#open-letter').addEventListener('click', openLetter);
 $('#read-letter').addEventListener('click', openLetter);
+$('#letter-shortcut')?.addEventListener('click', openLetter);
 letter.querySelector('.close-dialog').addEventListener('click', () => letter.close());
 letter.addEventListener('click', event => {
   const rect = letter.getBoundingClientRect();
@@ -227,10 +232,73 @@ function renderPhotos() {
     });
     grid.append(button);
   });
+  updateCamera();
 }
+
+function clearCameraFlash() {
+  clearTimeout(cameraFlashTimer);
+  $('#camera-viewfinder')?.classList.remove('is-flashing');
+}
+
+function updateCamera() {
+  const photo = $('#camera-photo');
+  if (!photo) return;
+  const count = cardAssets.photos.length;
+  const available = isUnlocked && count > 0;
+  for (const selector of ['#camera-previous', '#camera-next', '#camera-open', '#camera-shutter']) {
+    const control = $(selector);
+    if (control) control.disabled = !available;
+  }
+  if (!available) {
+    photo.removeAttribute('src');
+    return;
+  }
+  cameraIndex = ((cameraIndex % count) + count) % count;
+  const number = String(cameraIndex + 1).padStart(2, '0');
+  photo.src = cardAssets.photos[cameraIndex];
+  photo.alt = `Khoảnh khắc của Hanh ${cameraIndex + 1}`;
+  if ($('#camera-count')) $('#camera-count').textContent = `${number} / ${String(count).padStart(2, '0')}`;
+  if ($('#camera-caption')) $('#camera-caption').textContent = `HANH_${number}.JPG`;
+  $('#camera-open')?.setAttribute('aria-label', `Xem lớn ảnh ${cameraIndex + 1} của Hanh`);
+}
+
+function moveCamera(direction) {
+  if (!isUnlocked || !cardAssets.photos.length) return;
+  clearCameraFlash();
+  cameraIndex += direction;
+  updateCamera();
+}
+
+function openCameraPhoto(trigger) {
+  if (!isUnlocked || !cardAssets.photos.length) return;
+  clearCameraFlash();
+  selectedPhoto = cameraIndex;
+  photoTrigger = trigger;
+  updatePhoto();
+  if (!viewer.open) viewer.showModal();
+  document.body.classList.add('modal-open');
+}
+
+$('#camera-previous')?.addEventListener('click', () => moveCamera(-1));
+$('#camera-next')?.addEventListener('click', () => moveCamera(1));
+$('#camera-open')?.addEventListener('click', event => openCameraPhoto(event.currentTarget));
+$('#camera-shutter')?.addEventListener('click', event => {
+  if (!isUnlocked || !cardAssets.photos.length) return;
+  const trigger = event.currentTarget;
+  clearCameraFlash();
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    openCameraPhoto(trigger);
+    return;
+  }
+  $('#camera-viewfinder')?.classList.add('is-flashing');
+  cameraFlashTimer = setTimeout(() => openCameraPhoto(trigger), 220);
+});
+
 function updatePhoto() {
   $('#full-photo').src = cardAssets.photos[selectedPhoto];
   $('#photo-counter').textContent = `${selectedPhoto + 1} / ${cardAssets.photos.length}`;
+  cameraIndex = selectedPhoto;
+  updateCamera();
 }
 function movePhoto(direction) {
   if (!cardAssets.photos.length) return;
@@ -245,8 +313,10 @@ viewer.addEventListener('close', () => {
   if (isUnlocked) photoTrigger?.focus({ preventScroll: true });
 });
 viewer.addEventListener('keydown', event => {
-  if (event.key === 'ArrowLeft') movePhoto(-1);
-  if (event.key === 'ArrowRight') movePhoto(1);
+  if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    event.preventDefault();
+    movePhoto(event.key === 'ArrowLeft' ? -1 : 1);
+  }
 });
 function readFile(file) {
   return new Promise((resolve, reject) => {
@@ -285,10 +355,16 @@ $('#photo-input').addEventListener('change', async event => {
   if (count && isUnlocked) showToast(`Đã thêm ${count} ảnh. Nhớ tải thiệp để lưu lại nhé ♡`);
 });
 
+function setMusicButtons(pressed, label) {
+  for (const button of [musicToggle, $('#music-shortcut')]) {
+    if (!button) continue;
+    button.setAttribute('aria-pressed', String(pressed));
+    button.setAttribute('aria-label', label);
+  }
+}
 function syncMusicState() {
   const playing = isUnlocked && !player.paused;
-  musicToggle.setAttribute('aria-pressed', String(playing));
-  musicToggle.setAttribute('aria-label', playing ? 'Tạm dừng nhạc' : 'Bật nhạc Dành cho em');
+  setMusicButtons(playing, playing ? 'Tạm dừng nhạc' : 'Bật nhạc Dành cho em');
   musicState.textContent = playing ? 'Đang phát cho em nghe' : 'Bật một chút nhạc nhé';
 }
 function stopYouTube() {
@@ -318,8 +394,7 @@ function openYouTube() {
   frame.referrerPolicy = 'strict-origin-when-cross-origin';
   $('#youtube-frame').replaceChildren(frame);
   $('#youtube-panel').hidden = false;
-  musicToggle.setAttribute('aria-pressed', 'true');
-  musicToggle.setAttribute('aria-label', 'Dừng nhạc và đóng trình phát');
+  setMusicButtons(true, 'Dừng nhạc và đóng trình phát');
   musicState.textContent = 'Trình phát đang mở';
 }
 async function toggleMusic() {
@@ -343,6 +418,7 @@ player.addEventListener('error', () => {
   if (isUnlocked && cardAssets.music) showToast('Chưa phát được file này. Em thử một bản MP3 nhé.');
 });
 musicToggle.addEventListener('click', toggleMusic);
+$('#music-shortcut')?.addEventListener('click', toggleMusic);
 $('#close-youtube').addEventListener('click', () => { stopYouTube(); musicToggle.focus(); });
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && !letter.open && !viewer.open && !$('#youtube-panel').hidden) stopYouTube();
@@ -399,7 +475,7 @@ $('#export-card').addEventListener('click', async () => {
     clone.querySelector('#unlock-music').toggleAttribute('checked', $('#unlock-music').checked);
     clone.querySelector('#lock-card').classList.remove('is-error');
     clone.querySelector('#code-message').className = 'code-message';
-    clone.querySelector('#code-message').textContent = 'Bốn con số. Một ngày không thể quên.';
+    clone.querySelector('#code-message').textContent = 'Mật mã là một ngày đặc biệt.';
     clone.querySelector('#code-hint').hidden = true;
     clone.querySelector('#hint-button').setAttribute('aria-expanded', 'false');
     clone.querySelectorAll('.pin-slot').forEach(slot => slot.classList.remove('is-filled', 'is-current'));
@@ -409,6 +485,8 @@ $('#export-card').addEventListener('click', async () => {
     clone.querySelector('#youtube-panel').hidden = true;
     clone.querySelector('#birthday-music').removeAttribute('src');
     clone.querySelector('#photo-grid').replaceChildren();
+    clone.querySelector('#camera-photo')?.removeAttribute('src');
+    clone.querySelector('#camera-viewfinder')?.classList.remove('is-flashing');
     clone.querySelector('#full-photo').removeAttribute('src');
     clone.querySelector('.toast').classList.remove('visible');
     clone.querySelector('.toast').textContent = '';
