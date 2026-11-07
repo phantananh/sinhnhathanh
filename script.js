@@ -256,6 +256,10 @@ function updateCamera() {
   cameraIndex = ((cameraIndex % count) + count) % count;
   const number = String(cameraIndex + 1).padStart(2, '0');
   photo.src = cardAssets.photos[cameraIndex];
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    photo.getAnimations().forEach(animation => animation.cancel());
+    photo.animate([{ opacity: .35, transform: "scale(1.025)" }, { opacity: 1, transform: "scale(1)" }], { duration: 420, easing: "ease-out" });
+  }
   photo.alt = `Khoảnh khắc của Hanh ${cameraIndex + 1}`;
   if ($('#camera-count')) $('#camera-count').textContent = `${number} / ${String(count).padStart(2, '0')}`;
   if ($('#camera-caption')) $('#camera-caption').textContent = `HANH_${number}.JPG`;
@@ -527,3 +531,18 @@ if (new URLSearchParams(location.search).get('edit') === '1') {
 
 // Every visit, including an exported card, begins at the locked cover.
 relock({ focus: false });
+
+// Reveal once per visit; content remains visible without animation support.
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const revealObserver = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.animate([
+        { opacity: .3, transform: 'translateY(20px)' },
+        { opacity: 1, transform: 'translateY(0)' }
+      ], { duration: 650, easing: 'ease-out' });
+      revealObserver.unobserve(entry.target);
+    }
+  }, { threshold: .12 });
+  document.querySelectorAll('.album, .letter-section').forEach(section => revealObserver.observe(section));
+}

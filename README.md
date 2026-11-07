@@ -1,6 +1,6 @@
 # Hanh’s day — Birthday camera
 
-Website sinh nhật bằng tiếng Việt với giao diện máy ảnh kỹ thuật số retro màu bạc–xanh, lời nhắn tự nhiên dành cho Hanh, bánh thổi nến, album 15 ảnh và bài hát **Dành cho em**. HTML, CSS và JavaScript thuần; không cần cài thư viện, khóa API, cơ sở dữ liệu hay bước build.
+Website sinh nhật bằng tiếng Việt với giao diện máy ảnh kỹ thuật số retro màu bạc–xanh, lời nhắn tự nhiên dành cho Hanh, bánh thổi nến, album 39 ảnh và bài hát **Dành cho em**. HTML, CSS và JavaScript thuần; không cần cài thư viện, khóa API, cơ sở dữ liệu hay bước build.
 
 ## Chạy tại máy phát triển
 
@@ -24,7 +24,7 @@ Mật mã giao diện nằm trong hằng `PASSCODE` ở `script.js`; đây là m
 
 - Sửa lời chúc, tên và nội dung thư trong `index.html`.
 - Sửa màu sắc, bố cục trong `style.css`.
-- Dùng hai nút mũi tên trên máy ảnh để chuyển qua 15 ảnh. Nút chụp tạo hiệu ứng flash và mở ảnh lớn; chế độ giảm chuyển động bỏ hiệu ứng flash. Nút **Lời nhắn** và **Dành cho em** mở thư và điều khiển nhạc.
+- Dùng hai nút mũi tên trên máy ảnh để chuyển qua 39 ảnh. Nút chụp tạo hiệu ứng flash và mở ảnh lớn; chế độ giảm chuyển động bỏ hiệu ứng flash. Nút **Lời nhắn** và **Dành cho em** mở thư và điều khiển nhạc.
 - Nhấn **Thổi nến thôi** để tắt nến, xem lời chúc và hiệu ứng trái tim; nhấn lần nữa để thắp lại.
 - Mở thư từ nút ở đầu hoặc cuối trang; nhấn Escape hoặc nút đóng để đóng thư.
 - Hỗ trợ màn hình từ 320 px, thao tác bàn phím và tùy chọn giảm chuyển động của thiết bị.
@@ -61,7 +61,7 @@ Trong môi trường đám mây hiện tại, chức năng tạo/đóng iframe Y
 
 ## Ảnh đã ghép
 
-Đã đưa đủ 15 ảnh từ file ZIP người dùng cung cấp vào `assets/photos/`, giữ nguyên nội dung và chất lượng tệp gốc. Danh sách và thứ tự album được lưu trong JSON `card-assets` ở `index.html`. Ảnh chỉ được tạo trong giao diện sau khi mở khóa; nhấn ảnh để xem đầy đủ. Bản HTML xuất ra nhúng tất cả ảnh vào cùng tệp.
+Đã đưa đủ 39 ảnh từ file ZIP mới `ảnhh.zip` người dùng cung cấp vào `assets/photos/`, giữ nguyên nội dung và chất lượng tệp gốc. Danh sách và thứ tự album được lưu trong JSON `card-assets` ở `index.html`. Ảnh chỉ được tạo trong giao diện sau khi mở khóa; nhấn ảnh để xem đầy đủ. Bản HTML xuất ra nhúng tất cả ảnh vào cùng tệp.
 
 ## GitHub Pages
 
