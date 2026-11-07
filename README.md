@@ -26,7 +26,7 @@ Mật mã giao diện nằm trong hằng `PASSCODE` ở `script.js`; đây là m
 - Sửa màu sắc, bố cục trong `style.css`.
 - Dùng hai nút mũi tên trên máy ảnh để chuyển qua 39 ảnh. Nút chụp tạo hiệu ứng flash và mở ảnh lớn; chế độ giảm chuyển động bỏ hiệu ứng flash. Nút **Lời nhắn** và **Dành cho em** mở thư và điều khiển nhạc.
 - Nhấn **Thổi nến thôi** để tắt nến, xem lời chúc và hiệu ứng trái tim; nhấn lần nữa để thắp lại.
-- Mở thư từ nút ở đầu hoặc cuối trang; nhấn Escape hoặc nút đóng để đóng thư.
+- Mở lời chúc từ đầu trang, máy ảnh hoặc cuối trang sẽ hiện bông hoa với hiệu ứng chiều sâu, nở và đung đưa nhẹ. Nhấn **Đọc lời nhắn** để chuyển sang thư; nhấn Escape hoặc nút đóng để thoát ở cả hai bước. Chế độ giảm chuyển động hiển thị hoa tĩnh.
 - Hỗ trợ màn hình từ 320 px, thao tác bàn phím và tùy chọn giảm chuyển động của thiết bị.
 
 ## Album và file nhạc riêng

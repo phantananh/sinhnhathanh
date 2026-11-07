@@ -150,10 +150,20 @@ $('#relock-button').addEventListener('click', () => relock());
 function openLetter(event) {
   if (!isUnlocked) return;
   lastTrigger = event.currentTarget;
+  letter.classList.add("flower-first");
+  letter.setAttribute("aria-labelledby", "flower-title");
   letter.showModal();
+  $("#flower-title").focus({ preventScroll: true });
   letter.scrollTop = 0;
   document.body.classList.add('modal-open');
 }
+$('#flower-continue').addEventListener('click', () => {
+  if (!isUnlocked || !letter.open) return;
+  letter.classList.remove('flower-first');
+  letter.setAttribute('aria-labelledby', 'letter-title');
+  letter.scrollTop = 0;
+  $('#letter-title').focus({ preventScroll: true });
+});
 $('#open-letter').addEventListener('click', openLetter);
 $('#read-letter').addEventListener('click', openLetter);
 $('#letter-shortcut')?.addEventListener('click', openLetter);

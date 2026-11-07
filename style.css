@@ -666,3 +666,39 @@ dialog{background:#edf5fb;border:8px solid #c5d2e0;border-radius:14px;box-shadow
 @keyframes camera-breathe { 50% { box-shadow: 0 0 24px #73b1dc55, inset 0 1px #fff8; } }
 @keyframes standby-glow { 50% { color: #397d9f; text-shadow: 0 0 8px #6cbae88a; } }
 @keyframes camera-arrive { from { opacity: .3; transform: translateY(15px) scale(.98); } to { opacity: 1; transform: none; } }
+
+/* A little clay-like daisy before the birthday message. */
+.flower-gift { display: none; text-align: center; }
+#love-letter.flower-first .flower-gift { display: block; }
+#love-letter.flower-first .letter-reading { display: none; }
+#love-letter.flower-first { background: radial-gradient(ellipse at 50% 38%, #fffdf7, #e9f3fb 75%); }
+.flower-gift h2 { font: 800 24px var(--round); margin: 5px 0 10px; color: #52748c; }
+.flower-gift p { font-size: 13px; line-height: 1.8; color: #6e8799; margin: 0 0 22px; }
+.flower-gift .primary { margin: auto; padding: 13px 24px; }
+.flower-scene { position: relative; width: 260px; max-width: 100%; height: 290px; margin: 5px auto 0; perspective: 650px; }
+.flower-sway { position: absolute; inset: 0; transform-style: preserve-3d; }
+.flower-head { position: absolute; width: 160px; height: 160px; top: 30px; left: calc(50% - 80px); transform: rotateX(12deg) rotateY(-12deg); transform-style: preserve-3d; z-index: 2; }
+.flower-petal { position: absolute; left: 55px; top: 0; width: 50px; height: 84px; border-radius: 55% 55% 45% 45%; transform-origin: 25px 80px; transform: rotate(calc(var(--petal) * 45deg)) rotateX(-12deg); background: radial-gradient(ellipse at 32% 25%, #fff, #f6edff 45%, #c5addd 100%); box-shadow: inset 3px 4px 7px #ffffffee, inset -4px -5px 8px #a78ac040, 0 5px 5px #6c558b25; }
+.flower-face { position: absolute; width: 66px; height: 66px; top: 47px; left: 47px; border-radius: 50%; background: radial-gradient(circle at 30% 25%, #fff3ac, #f7d66e 60%, #dcad46); transform: translateZ(22px); box-shadow: inset 2px 3px 5px #fff6c5, 0 5px 9px #987a4455; }
+.flower-eyes::before,.flower-eyes::after { content:''; position: absolute; top: 25px; width: 5px; height: 7px; border-radius: 50%; background: #795b43; }
+.flower-eyes::before { left: 20px; }.flower-eyes::after { right: 20px; }
+.flower-smile { position: absolute; top: 33px; left: 27px; width: 13px; height: 9px; border-bottom: 2px solid #98704b; border-radius: 50%; }
+.flower-face::after { content: ''; position: absolute; top: 34px; left: 12px; width: 10px; height: 5px; border-radius: 50%; background: #e9a38c80; box-shadow: 32px 0 #e9a38c80; }
+.flower-stem { position: absolute; top: 130px; left: calc(50% - 6px); width: 12px; height: 125px; border-radius: 10px; background: linear-gradient(90deg,#6da990,#bce2b1 40%,#79ae90); transform: rotate(-4deg); box-shadow: 3px 2px 4px #5d9a7930; }
+.flower-leaf { position: absolute; width: 58px; height: 29px; top: 193px; background: linear-gradient(160deg,#cce9b6,#8fc2a0 55%,#609a83); border-radius: 0 90% 0 90%; box-shadow: inset 0 2px 3px #edffd080; }
+.leaf-left { left: calc(50% - 58px); transform: rotate(18deg); }.leaf-right { left: calc(50% + 2px); top: 176px; transform: rotate(-45deg); }
+.flower-shadow { position: absolute; bottom: 18px; left: 25%; width: 50%; height: 14px; border-radius: 50%; background: #7b9a9a24; filter: blur(6px); }
+.flower-spark { position: absolute; color: #b3a2d5; font-size: 24px; }.spark-a { left: 12px; top: 60px; }.spark-b { right: 8px; top: 140px; font-size: 30px; }.spark-c { right: 28px; top: 25px; font-size: 14px; }
+@media (prefers-reduced-motion: no-preference) {
+  .flower-first .flower-head { animation: flower-bloom 1.1s cubic-bezier(.2,.8,.25,1.2) both; }
+  .flower-first .flower-sway { animation: flower-sway 5s 1.1s ease-in-out infinite; transform-origin: 50% 88%; }
+  .flower-first .flower-spark { animation: flower-twinkle 2.5s ease-in-out infinite alternate; }
+  .flower-first .spark-b { animation-delay: .6s; }
+  .flower-first #flower-continue { animation: flower-button .5s .9s backwards; }
+  .letter-reading { animation: camera-arrive .4s ease-out; }
+}
+@keyframes flower-bloom { from { transform: rotateX(65deg) rotateY(-35deg) scale(.15); opacity: 0; } to { transform: rotateX(12deg) rotateY(-12deg) scale(1); opacity: 1; } }
+@keyframes flower-sway { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
+@keyframes flower-twinkle { from { opacity: .3; transform: scale(.7) rotate(-10deg); } to { opacity: 1; transform: scale(1.15) rotate(10deg); } }
+@keyframes flower-button { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (max-height: 640px) { .flower-scene { height: 240px; margin-top: -15px; transform: scale(.85); transform-origin: 50% 65%; } }
